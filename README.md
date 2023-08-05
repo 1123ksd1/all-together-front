@@ -1,6 +1,11 @@
 # all-together-front
 
+아래 링크에서 html 관련 정보를 보시고 작업하시면 될 것 같아요!
+https://www.notion.so/API-61fea547ccbb4e43b5023fa3b9f4a130?pvs=4
+
 ---
+
+[ 프로젝트 구조 ]
 
 static 폴더 - html 파일을 제외한 것들
 
@@ -32,7 +37,7 @@ templates 폴더 - html 파일들
 
 <br>
 
-추가 요구 사항
+[ 추가 요구 사항 ]
 
 - 중복되는 components와 같은 것들은 한 명이 먼저 작업하고, 그걸 베이스로 각자 작업하면 좋을 것 같아요! (css 안겹치게)
 
