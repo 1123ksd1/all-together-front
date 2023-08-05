@@ -1,9 +1,18 @@
 # all-together-front
 
+<br>
+
 아래 링크에서 html 관련 정보를 보시고 작업하시면 될 것 같아요!
+
+<br>
+
 https://www.notion.so/API-61fea547ccbb4e43b5023fa3b9f4a130?pvs=4
 
+<br>
+
 ---
+
+<br>
 
 [ 프로젝트 구조 ]
 
