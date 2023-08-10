@@ -5,88 +5,6 @@
 .main-content {
     display: flex;
 }
-.main-left {
-    margin-right: 70px;
-}
-.main-left__nav {
-    width: 266px;
-    height: 856px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    border: 1px solid #959595;
-    background: #FFF;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 44.7px 32.36px 45px 22px;
-}
-.main-left__nav-title, .post-nav {
-    width: 207.638px;
-    border-bottom: 1px solid #000000;
-}
-.main-left__nav-title span {
-    display: block;
-    width: 205.27px;
-    height: 52.899px;
-    flex-shrink: 0;
-    color: #1D0C0C;
-    text-align: center;
-    font-family: Inter;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.post-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.post-nav__list {
-    color: #4B2A0B;
-    text-align: center;
-    font-family: Inter;
-    font-style: normal;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.post-nav__list:nth-of-type(1) {
-    height: 70.71px;
-    font-size: 25px;
-    font-weight: 900;
-    border-bottom: 1px solid #000000;
-}
-.post-nav__list:nth-of-type(2) {
-    height: 70.71px;
-    font-size: 18px;
-    font-weight: 700;
-    border-bottom: 1px solid #000000;
-}
-.post-nav__list:nth-of-type(3) {
-    height: 64.99px;
-    font-size: 18px;
-    font-weight: 700;
-    border-bottom: 1px solid #000000;
-}
-.post-nav__list:nth-of-type(4) {
-    
-}
-.post-nav__list:nth-of-type(5) {
-    
-}
-.post-nav__list:nth-of-type(6) {
-    
-}
-.post-nav__list:nth-of-type(7) {
-    
-}
-.post-nav__list:nth-of-type(8) {
-    
-}
 
 .main-right__title {
     width: 234px;
@@ -102,6 +20,7 @@
 }
 .main-right__column {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 15.53px;
 }
 .main-right__sub-title {
@@ -117,11 +36,15 @@
 }
 .main-right__hr {
     width: 928.451px;
-    height: 5px;
     background: #000;
+}
+.main-right__hr--bolder {
+    height: 5px;
 }
 .posts-wrap {
     width: 928.451px;
+    margin-top: 83.68px;
+    border-collapse: collapse;
 }
 .posts-wrap__topic {
     width: 10%;
@@ -143,19 +66,16 @@
     text-align: center;
 }
 .posts-wrap__top {
-    width: 53px;
-    height: 70px;
-    flex-shrink: 0;
     color: #858585;
     font-family: Hind;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 130px; 
 }
 .posts-wrap__notice,
 .posts-wrap__worry {
     height: 63.16px;
+    border-bottom: 2px solid #9F9F9F;
 }
 .posts-wrap__notice {
     background: #E6E6E6;
@@ -208,3 +128,80 @@
     font-weight: 600;
     line-height: 10px; /* 100% */
 }
+.posts-wrap {
+    border-spacing: 0px;
+}
+.main-right__footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 49.64px 0;
+}
+.number-nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.number-nav__list {
+    list-style: none;
+}
+.number-nav__list a {
+    text-decoration: none;
+    font-size: 21px;
+}
+#right-btn {
+    rotate: 180deg;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    width: 66px;
+    height: 22px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid #4B2A0B;
+    background: #FFF;
+    
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 10px; 
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropbtn img {
+    width: 3.947px;
+    height: 5.526px;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+  }
