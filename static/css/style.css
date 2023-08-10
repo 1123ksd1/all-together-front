@@ -1,0 +1,11 @@
+/*components*/
+@import "components/footer.css";
+@import "components/header.css";
+/*screens*/
+@import "screens/posts-1.css";
+
+*{margin:0;padding:0;box-sizing:border-box;font:inherit;color:inherit;flex-shrink:0;}
+html {
+    width: 1920px;
+    height: 2468px;
+}

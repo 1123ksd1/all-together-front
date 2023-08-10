@@ -1,0 +1,210 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+.main-content {
+    display: flex;
+}
+.main-left {
+    margin-right: 70px;
+}
+.main-left__nav {
+    width: 266px;
+    height: 856px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid #959595;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44.7px 32.36px 45px 22px;
+}
+.main-left__nav-title, .post-nav {
+    width: 207.638px;
+    border-bottom: 1px solid #000000;
+}
+.main-left__nav-title span {
+    display: block;
+    width: 205.27px;
+    height: 52.899px;
+    flex-shrink: 0;
+    color: #1D0C0C;
+    text-align: center;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.post-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.post-nav__list {
+    color: #4B2A0B;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-nav__list:nth-of-type(1) {
+    height: 70.71px;
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 1px solid #000000;
+}
+.post-nav__list:nth-of-type(2) {
+    height: 70.71px;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #000000;
+}
+.post-nav__list:nth-of-type(3) {
+    height: 64.99px;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #000000;
+}
+.post-nav__list:nth-of-type(4) {
+    
+}
+.post-nav__list:nth-of-type(5) {
+    
+}
+.post-nav__list:nth-of-type(6) {
+    
+}
+.post-nav__list:nth-of-type(7) {
+    
+}
+.post-nav__list:nth-of-type(8) {
+    
+}
+
+.main-right__title {
+    width: 234px;
+    height: 77px;
+    flex-shrink: 0;
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+.main-right__column {
+    display: flex;
+    margin-bottom: 15.53px;
+}
+.main-right__sub-title {
+    width: 337px;
+    height: 24px;
+    flex-shrink: 0;
+    color: rgba(75, 42, 11, 0.80);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.main-right__hr {
+    width: 928.451px;
+    height: 5px;
+    background: #000;
+}
+.posts-wrap {
+    width: 928.451px;
+}
+.posts-wrap__topic {
+    width: 10%;
+    text-align: center;
+}
+.posts-wrap__title {
+    width: 60%;
+}
+.posts-wrap__writer {
+    width: 10%;
+    text-align: center;
+}
+.posts-wrap__date {
+    width: 10%;
+    text-align: center;
+}
+.posts-wrap__count {
+    width: 10%;
+    text-align: center;
+}
+.posts-wrap__top {
+    width: 53px;
+    height: 70px;
+    flex-shrink: 0;
+    color: #858585;
+    font-family: Hind;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130px; 
+}
+.posts-wrap__notice,
+.posts-wrap__worry {
+    height: 63.16px;
+}
+.posts-wrap__notice {
+    background: #E6E6E6;
+}
+.posts-wrap__worry {
+    background: #F5F5F5;
+}
+.posts-wrap__topic--notice {
+    width: 45.001px;
+    height: 24.474px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 2px solid #4B2A0B;
+    background: #FFE500;
+
+    padding: 6.7px 9.5px 9.5px 10.2px;
+    color: #4B2A0B;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 10px; /* 100% */
+}
+.posts-wrap__title--data,
+.posts-wrap__writer--data,
+.posts-wrap__date--data,
+.posts-wrap__count--data {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.posts-wrap__topic--worry {
+    width: 45.001px;
+    height: 24.474px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 2px solid #4B2A0B;
+    background: #FFF;
+
+    padding: 6.7px 9.5px 9.5px 10.2px;
+    color: #4B2A0B;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 10px; /* 100% */
+}
