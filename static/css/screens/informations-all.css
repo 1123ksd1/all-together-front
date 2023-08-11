@@ -1,0 +1,91 @@
+.info-box {
+    width: 342.75px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 2px solid #C7C7C7;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.20);
+
+    padding: 29.07px 45.23px 38.14px 46.23px;
+    position: relative;
+}
+.info-box__ct {
+    width: 66.646px;
+    height: 18.069px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #CDCDCD;
+    color: #4B2A0B;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 18.069px; /* 부모 요소의 높이와 동일하게 설정 */
+
+    display: inline-block;
+    
+}
+.info-box__star {
+    position: absolute;
+    top: 29.07px;
+    right: 45.23px;
+}
+.info-box__topic {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-top: 32.5px;
+    margin-bottom: 18.36px;
+}
+.info-box__description {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.info-box__table-ctgory {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.info-box__table-ctgory-data {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.info-box__more-btn {
+    width: 253.095px;
+    height: 38.494px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 2px solid #4B2A0B;
+    background: #FFE500;
+    color: #4B2A0B;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.info-box__table {
+    margin-top: 15.86px;
+    margin-bottom: 34.42px;
+
+}
+.info-box__table-tr {
+}

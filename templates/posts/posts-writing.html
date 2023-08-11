@@ -9,8 +9,8 @@
 <body>
     <header></header>
     <nav></nav>
-    <main class="main">
-        <div class="main-content">
+    <main class="posts-main">
+        <div class="posts-main-content">
             <div class="main-left">
                 <nav class="main-left__nav">
                     <div class="main-left__nav-yellow"></div>
@@ -101,21 +101,6 @@
         const btnItalic = document.getElementById('btn-italic');
         const btnUnderline = document.getElementById('btn-underline');
         
-        btnBold.addEventListener('click', () => applyStyle('bold'));
-        btnItalic.addEventListener('click', () => applyStyle('italic'));
-        btnUnderline.addEventListener('click', () => applyStyle('underline'));
-        
-        function applyStyle(style) {
-            const range = new Range();
-            range.selectNodeContents(textarea);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);        
-        }
-
-        function focusEditor() {
-        textarea.focus({preventScroll: true});
-        }
     </script>
     
 </html>

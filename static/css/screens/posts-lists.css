@@ -1,8 +1,8 @@
-.main {
+.posts-main {
     display: flex;
     justify-content: center;
 }
-.main-content {
+.posts-main-content {
     display: flex;
 }
 
