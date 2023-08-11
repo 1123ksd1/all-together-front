@@ -48,13 +48,46 @@
                         <input type="text" placeholder="제목을 입력해 주세요.">
                     </form>
                 </div>
-                <div class="main-right__edit">
-
+                <div class="main-right__editor">
+                    <button id="btn-image" class="editor-top editor-top-image">
+                        <img src="../../static/image/image.svg">
+                        <span>사진</span>
+                    </button>
+                    <button id="btn-video" class="editor-top editor-top-video">
+                        <img src="../../static/image/image.svg">
+                        <span>동영상</span>
+                    </button>
+                    <button id="btn-file" class="editor-top editor-top-file">
+                        <img src="../../static/image/file.png">
+                        <span>파일</span>
+                    </button>
+                    <button id="btn-link" class="editor-top-link">
+                        <img src="../../static/image/link.svg">
+                        <span>링크</span>
+                    </button>
+                    <button id="btn-save" class="editor-top editor-top-save">
+                        <img src="../../static/image/save.svg">
+                        <span>저장하기</span>
+                    </button>
+                    <div class="editor-border"></div>
+                    <button id="btn-sec" class="editor-bottom editor-bottom-sec">
+                        본문
+                        <img src="../../static/image/down-btn.svg">
+                    </button>
+                    <button id="btn-font-style" class="editor-bottom editor-bottom-font-style">
+                        기본서체
+                        <img src="../../static/image/down-btn.svg">
+                    </button>
+                    <button id="btn-font-size" class="editor-bottom editor-bottom-font-size">
+                        15pt
+                        <img src="../../static/image/down-btn.svg">
+                    </button>
+                    <button id="btn-bold" class="editor-bottom editor-bottom-bold"><b>B</b></button>
+                    <button id="btn-italic" class="editor-bottom editor-bottom-italic"><i>I</i></button>
+                    <button id="btn-underline" class="editor-bottom editor-bottom-underline"><u>U</u></button>
+                    
                 </div>
-                <div class="main-right__input-text">
-                    <textarea placeholder="작성할 내용">
-
-                    </textarea>
+                <div id="textarea" class="main-right__input-text" contenteditable="true">
                 </div>
 
     
@@ -62,5 +95,27 @@
         </div>
     </main>
     <footer></footer>
-</body>
+    <script>
+        const textarea = document.getElementById('textarea');
+        const btnBold = document.getElementById('btn-bold');
+        const btnItalic = document.getElementById('btn-italic');
+        const btnUnderline = document.getElementById('btn-underline');
+        
+        btnBold.addEventListener('click', () => applyStyle('bold'));
+        btnItalic.addEventListener('click', () => applyStyle('italic'));
+        btnUnderline.addEventListener('click', () => applyStyle('underline'));
+        
+        function applyStyle(style) {
+            const range = new Range();
+            range.selectNodeContents(textarea);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);        
+        }
+
+        function focusEditor() {
+        textarea.focus({preventScroll: true});
+        }
+    </script>
+    
 </html>

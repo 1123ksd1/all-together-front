@@ -3,7 +3,7 @@
 }
 .main-right__choose-posts-btn,
 .main-right__input-title-form input,
-.main-right__edit,
+.main-right__editor,
 .main-right__input-text textarea {
     width: 902px;
     flex-shrink: 0;
@@ -45,14 +45,119 @@
     line-height: normal;
 
 }
-.main-right__edit {
+.main-right__editor {
     height: 119px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #EFEFEF;
 }
-.main-right__input-text textarea {
+.main-right__editor button {
+    border-style: none;
+    cursor: pointer;
+}
+.main-right__input-text {
     height: 834px;
     flex-shrink: 0;
     border-radius: 40px;
+    padding: 16px 24px;
 }
+.main-right__editor {
+    position: relative;
+}
+.editor-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.editor-top span {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+.editor-top-image {
+    position: absolute;
+    top: 17px;
+    left: 42px;
+}
+.editor-top-video {
+    position: absolute;
+    top: 17px;
+    left: 118px;
+}
+.editor-top-file {
+    position: absolute;
+    top: 17px;
+    left: 199px;
+}
+.editor-top-link {
+    position: absolute;
+    top: 17px;
+    left: 275px;
+}
+.editor-top-save {
+    position: absolute;
+    top: 17px;
+    right: 37px;
+}
+.editor-border {
+    width: 859px;
+    height: 1px;
+    background: #3B3B3B;
+    position: absolute;
+    left: 19px;
+    bottom: 45px;
+}
+.editor-bottom-sec {
+    position: absolute;
+    left: 51px;
+    bottom: 15px;
+}
+.editor-bottom-font-style {
+    position: absolute;
+    left: 104px;
+    bottom: 15px;
+}
+.editor-bottom-font-size {
+    position: absolute;
+    left: 178px;
+    bottom: 15px;
+}
+.editor-bottom-bold {
+    position: absolute;
+    left: 244px;
+    bottom: 12px;
+}
+.editor-bottom-italic {
+    position: absolute;
+    left: 259px;
+    bottom: 12px;
+}
+.editor-bottom-underline {
+    position: absolute;
+    left: 274px;
+    bottom: 15px;
+}
+.editor-bottom {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.6px;
+}
+
+.editor-bottom b,
+.editor-bottom i,
+.editor-border.editor-bottom u {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: -0.75px;
+}
+
+
