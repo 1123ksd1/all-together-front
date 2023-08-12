@@ -37,12 +37,12 @@
                 <header class="main-right__title">전체글</header>
                 <div class="main-right__column">
                     <div class="main-right__sub-title">모든 게시판의 글을 볼 수 있는 곳</div>
-                    <div class="dropdown">
-                        <button class="dropbtn">인기순 <img src="../../static/image/left-btn.svg"></button>
-                        <div class="dropdown-content">
-                          <a href="#">인기순</a>
-                        </div>
-                    </div>
+                    <form action="/informations/region/" method="GET" id="align_mode_form" class="align_mode_form">
+                        <select name="align_mode" id="align_mode" class="align_mode">
+                            <option value="recently">최신순</option>
+                            <option value="scrap">인기순</option>
+                        </select>
+                    </form>
                 </div>
                 <div class="main-right__hr main-right__hr--bolder"></div>
     
@@ -107,7 +107,7 @@
                         </tr>
                     </table>
                 </section>
-                <footer class="main-right__footer">
+                <footer class="posts-footer">
                     <ul class="number-nav">
                         <li class="number-nav__list"><a href="#"><img src="../../static/image/left-btn.svg"></a></li>
                         <li class="number-nav__list"><a href="#">1</a></li>

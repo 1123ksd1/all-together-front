@@ -2,6 +2,8 @@
 @import "components/footer.css";
 @import "components/header.css";
 @import "components/posts-left-nav.css";
+@import "components/number-nav.css";
+@import "components/drop-down.css";
 /*screens*/
 @import "screens/posts-lists.css";
 @import "screens/posts-writing.css";
