@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>posts-writing</title>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main class="posts-main">
+        <div class="posts-main-content">
+            <div class="main-left">
+                <nav class="main-left__nav">
+                    <div class="main-left__nav-yellow"></div>
+                    <div class="main-left__nav-bookmark"></div>
+                    <div class="main-left__nav-white">
+                        <img src="../../static/image/main-logo.svg">
+                        <div class="main-left__nav-title"><span>Damo.yeo</span></div><div class="main-left__nav-border"></div>
+                        <ul class="post-nav">
+                            <li class="post-nav__list"><a href="#">전체글</a></li><div class="main-left__nav-border"></div>
+                            <li class="post-nav__list"><a href="#">실시간 인기글</a> </li><div class="main-left__nav-border"></div>
+                            <li class="post-nav__list"><a href="#">게시판 모음</a></li><div class="main-left__nav-border"></div>
+                            <li class="post-nav__list"><a href="#">알바 게시판</a></li>
+                            <li class="post-nav__list"><a href="#">과외 게시판</a></li>
+                            <li class="post-nav__list"><a href="#">취준 게시판</a></li>
+                            <li class="post-nav__list"><a href="#">경력단절 게시판</a></li><div class="main-left__nav-border"></div>
+                            <li class="post-nav__list"><a href="#">공지사항</a></li><div class="main-left__nav-border"></div>
+                            <li class="post-nav__list"><a href="#">이벤트</a></li><div class="main-left__nav-border"></div>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="main-right">
+                <header class="main-right__title">글쓰기</header>
+                <div class="main-right__hr main-right__hr--lighter"></div>
+
+                <div class="main-right__choose-posts">
+                    <button class="main-right__choose-posts-btn">
+                        <span>게시판을 선택</span>
+                        <img src="../../static/image/left-btn.svg">
+                    </button>
+                </div>
+                <div class="main-right__input-title">
+                    <form class="main-right__input-title-form">
+                        <input type="text" placeholder="제목을 입력해 주세요.">
+                    </form>
+                </div>
+                <div class="main-right__editor">
+                    <button id="btn-image" class="editor-top editor-top-image">
+                        <img src="../../static/image/image.svg">
+                        <span>사진</span>
+                    </button>
+                    <button id="btn-video" class="editor-top editor-top-video">
+                        <img src="../../static/image/image.svg">
+                        <span>동영상</span>
+                    </button>
+                    <button id="btn-file" class="editor-top editor-top-file">
+                        <img src="../../static/image/file.png">
+                        <span>파일</span>
+                    </button>
+                    <button id="btn-link" class="editor-top-link">
+                        <img src="../../static/image/link.svg">
+                        <span>링크</span>
+                    </button>
+                    <button id="btn-save" class="editor-top editor-top-save">
+                        <img src="../../static/image/save.svg">
+                        <span>저장하기</span>
+                    </button>
+                    <div class="editor-border"></div>
+                    <button id="btn-sec" class="editor-bottom editor-bottom-sec">
+                        본문
+                        <img src="../../static/image/down-btn.svg">
+                    </button>
+                    <button id="btn-font-style" class="editor-bottom editor-bottom-font-style">
+                        기본서체
+                        <img src="../../static/image/down-btn.svg">
+                    </button>
+                    <button id="btn-font-size" class="editor-bottom editor-bottom-font-size">
+                        15pt
+                        <img src="../../static/image/down-btn.svg">
+                    </button>
+                    <button id="btn-bold" class="editor-bottom editor-bottom-bold"><b>B</b></button>
+                    <button id="btn-italic" class="editor-bottom editor-bottom-italic"><i>I</i></button>
+                    <button id="btn-underline" class="editor-bottom editor-bottom-underline"><u>U</u></button>
+                    
+                </div>
+                <div id="textarea" class="main-right__input-text" contenteditable="true">
+                </div>
+
+    
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        const textarea = document.getElementById('textarea');
+        const btnBold = document.getElementById('btn-bold');
+        const btnItalic = document.getElementById('btn-italic');
+        const btnUnderline = document.getElementById('btn-underline');
+        
+    </script>
+    
+</html>

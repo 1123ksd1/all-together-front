@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>informations-all</title>
+</head>
+<body>
+    <header class="header" style="background-color: lightblue;">Header</header>
+    <nav class="nav">
+
+        <div class="info-title">
+            <div>
+                <h1>000지역 / 000복지</h1>
+                <p>000지역 000복지에 관한 설명 000복지에는 무엇이 들어가면 좋을까요<br>
+                    대상도 나눠서 볼 수 있거나 자신한테 맞는 복지를 검색을 통해 찾는 기능이 추가
+                    된다면 더욱 좋을 것 같습니다.
+                </p>
+            </div>
+        </div>
+    </nav>
+    <div class="info-border"></div>
+    <main class="info-main">
+        <div class="info-main-content">
+            <div class="info-main-content__top">
+                <h4>000지역 복지제도</h4>
+                <form action="/informations/region/" method="GET" id="align_mode_form" class="align_mode_form">
+                    <select name="align_mode" id="align_mode" class="align_mode">
+                        <option value="recently">최신순</option>
+                        <option value="scrap">인기순</option>
+                    </select>
+                </form>
+            </div>
+            <div class="item-container" id="item-container">
+                <div class="item-container__column">
+                    <div class="item">
+                        <div class="item__ct">서민금융</div>
+                        <div class="item__ct">청년</div>
+                        <img class="item__star" src="../../static/image/star.svg">
+                        <div class="item__topic">청년도약계좌</div>
+                        <div class="item__description">만기 5년동안 매월 70만원 한도 내에서 자유롭게 
+                            납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다.
+                        </div>
+                        <table class="item__table">
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">문의처</td>
+                                <td class="item__table-ctgory-data">1397</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">지원주기</td>
+                                <td class="item__table-ctgory-data">월</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">제공유형</td>
+                                <td class="item__table-ctgory-data">기타</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">담당부처</td>
+                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                            </tr>
+                        </table>
+                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
+                            자세히 보기
+                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                            <i id="heart-6" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-6"></span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <div class="item__ct">서민금융</div>
+                        <div class="item__ct">청년</div>
+                        <img class="item__star" src="../../static/image/star.svg">
+                        <div class="item__topic">청년도약계좌</div>
+                        <div class="item__description">만기 5년동안 매월 70만원 한도 내에서 자유롭게 
+                            납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다.
+                        </div>
+                        <table class="item__table">
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">문의처</td>
+                                <td class="item__table-ctgory-data">1397</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">지원주기</td>
+                                <td class="item__table-ctgory-data">월</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">제공유형</td>
+                                <td class="item__table-ctgory-data">기타</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">담당부처</td>
+                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                            </tr>
+                        </table>
+                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
+                            자세히 보기
+                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                            <i id="heart-6" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-6"></span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <div class="item__ct">서민금융</div>
+                        <div class="item__ct">청년</div>
+                        <img class="item__star" src="../../static/image/star.svg">
+                        <div class="item__topic">청년도약계좌</div>
+                        <div class="item__description">만기 5년동안 매월 70만원 한도 내에서 자유롭게 
+                            납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다.
+                        </div>
+                        <table class="item__table">
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">문의처</td>
+                                <td class="item__table-ctgory-data">1397</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">지원주기</td>
+                                <td class="item__table-ctgory-data">월</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">제공유형</td>
+                                <td class="item__table-ctgory-data">기타</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">담당부처</td>
+                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                            </tr>
+                        </table>
+                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
+                            자세히 보기
+                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                            <i id="heart-6" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-6"></span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="item-container__column">
+                    <div class="item">
+                        <div class="item__ct">서민금융</div>
+                        <div class="item__ct">청년</div>
+                        <img class="item__star" src="../../static/image/star.svg">
+                        <div class="item__topic">청년도약계좌</div>
+                        <div class="item__description">만기 5년동안 매월 70만원 한도 내에서 자유롭게 
+                            납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다.
+                        </div>
+                        <table class="item__table">
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">문의처</td>
+                                <td class="item__table-ctgory-data">1397</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">지원주기</td>
+                                <td class="item__table-ctgory-data">월</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">제공유형</td>
+                                <td class="item__table-ctgory-data">기타</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">담당부처</td>
+                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                            </tr>
+                        </table>
+                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
+                            자세히 보기
+                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                            <i id="heart-6" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-6"></span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <div class="item__ct">서민금융</div>
+                        <div class="item__ct">청년</div>
+                        <img class="item__star" src="../../static/image/star.svg">
+                        <div class="item__topic">청년도약계좌</div>
+                        <div class="item__description">만기 5년동안 매월 70만원 한도 내에서 자유롭게 
+                            납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다.
+                        </div>
+                        <table class="item__table">
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">문의처</td>
+                                <td class="item__table-ctgory-data">1397</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">지원주기</td>
+                                <td class="item__table-ctgory-data">월</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">제공유형</td>
+                                <td class="item__table-ctgory-data">기타</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">담당부처</td>
+                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                            </tr>
+                        </table>
+                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
+                            자세히 보기
+                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                            <i id="heart-6" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-6"></span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <div class="item__ct">서민금융</div>
+                        <div class="item__ct">청년</div>
+                        <img class="item__star" src="../../static/image/star.svg">
+                        <div class="item__topic">청년도약계좌</div>
+                        <div class="item__description">만기 5년동안 매월 70만원 한도 내에서 자유롭게 
+                            납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다.
+                        </div>
+                        <table class="item__table">
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">문의처</td>
+                                <td class="item__table-ctgory-data">1397</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">지원주기</td>
+                                <td class="item__table-ctgory-data">월</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">제공유형</td>
+                                <td class="item__table-ctgory-data">기타</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">담당부처</td>
+                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                            </tr>
+                        </table>
+                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
+                            자세히 보기
+                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                            <i id="heart-6" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-6"></span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="item-container__column">
+                    <div class="item">
+                        <div class="item__ct">서민금융</div>
+                        <div class="item__ct">청년</div>
+                        <img class="item__star" src="../../static/image/star.svg">
+                        <div class="item__topic">청년도약계좌</div>
+                        <div class="item__description">만기 5년동안 매월 70만원 한도 내에서 자유롭게 
+                            납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다.
+                        </div>
+                        <table class="item__table">
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">문의처</td>
+                                <td class="item__table-ctgory-data">1397</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">지원주기</td>
+                                <td class="item__table-ctgory-data">월</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">제공유형</td>
+                                <td class="item__table-ctgory-data">기타</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">담당부처</td>
+                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                            </tr>
+                        </table>
+                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
+                            자세히 보기
+                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                            <i id="heart-6" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-6"></span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <div class="item__ct">서민금융</div>
+                        <div class="item__ct">청년</div>
+                        <img class="item__star" src="../../static/image/star.svg">
+                        <div class="item__topic">청년도약계좌</div>
+                        <div class="item__description">만기 5년동안 매월 70만원 한도 내에서 자유롭게 
+                            납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다.
+                        </div>
+                        <table class="item__table">
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">문의처</td>
+                                <td class="item__table-ctgory-data">1397</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">지원주기</td>
+                                <td class="item__table-ctgory-data">월</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">제공유형</td>
+                                <td class="item__table-ctgory-data">기타</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">담당부처</td>
+                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                            </tr>
+                        </table>
+                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
+                            자세히 보기
+                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                            <i id="heart-6" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-6"></span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <div class="item__ct">서민금융</div>
+                        <div class="item__ct">청년</div>
+                        <img class="item__star" src="../../static/image/star.svg">
+                        <div class="item__topic">청년도약계좌</div>
+                        <div class="item__description">만기 5년동안 매월 70만원 한도 내에서 자유롭게 
+                            납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다.
+                        </div>
+                        <table class="item__table">
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">문의처</td>
+                                <td class="item__table-ctgory-data">1397</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">지원주기</td>
+                                <td class="item__table-ctgory-data">월</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">제공유형</td>
+                                <td class="item__table-ctgory-data">기타</td>
+                            </tr>
+                            <tr class="item__table-tr">
+                                <td class="item__table-ctgory">담당부처</td>
+                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                            </tr>
+                        </table>
+                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
+                            자세히 보기
+                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                            <i id="heart-6" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-6"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <footer class="information-footer">
+                <ul class="number-nav">
+                    <li class="number-nav__list"><a href="#"><img src="../../static/image/left-btn.svg"></a></li>
+                    <li class="number-nav__list"><a href="#">1</a></li>
+                    <li class="number-nav__list"><a href="#">2</a></li>
+                    <li class="number-nav__list"><a href="#">3</a></li>
+                    <li class="number-nav__list"><a href="#">4</a></li>
+                    <li class="number-nav__list"><a href="#">5</a></li>
+                    <li class="number-nav__list"><a href="#">6</a></li>
+                    <li class="number-nav__list"><a href="#">7</a></li>
+                    <li class="number-nav__list"><a href="#">8</a></li>
+                    <li class="number-nav__list"><a href="#"><img id="right-btn" src="../../static/image/left-btn.svg"></a></li>
+                </ul>
+            </footer>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer--yellow"></div>
+    </footer>
+</body>
+</html>
