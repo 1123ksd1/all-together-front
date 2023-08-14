@@ -68,7 +68,7 @@ hr{
 }
 
 #hr2{
-    width: 950px;
+    width: 900px;
 
 }
 
@@ -116,8 +116,8 @@ hr{
     justify-content: center; 
     align-items: flex-start;
     height: 100vh;
-    width: 60vw;
-    height: 60vh;
+    width: 800px;
+    height: 400px;
     flex-shrink: 0;
     margin-left: 100px;
     margin-top: 30px;
@@ -259,8 +259,8 @@ hr{
 
 .okay{
     margin: 10px;
-    width: 6vw;
-    height: 6vh;
+    width: 80px;
+    height: 40px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #743724;
@@ -278,8 +278,8 @@ hr{
 
 .closed{
     margin-left: 20px;
-    width: 6vw;
-    height: 6vh;
+    width: 80px;
+    height: 40px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #626262;
@@ -306,9 +306,9 @@ hr{
 
 #onlineService>p{
    
-    margin-left: 200px;
+    margin-left: 130px;
     padding-top: 60px;
-    width: 20vw;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -323,12 +323,14 @@ hr{
 }
 
 #so{
-    margin-left: 250px;
+    margin-left: 140px;
+    margin-top: -10px;
     color: #FFF;
     font-family: Inter;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
      letter-spacing: -1px;
 }
+
