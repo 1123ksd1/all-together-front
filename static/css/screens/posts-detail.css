@@ -187,8 +187,19 @@
     line-height: normal;
     letter-spacing: -0.9px;
     padding: 20px 0 20px 10px;
-
-    border-bottom: 2px solid #4B2A0B;
+}
+.post-detail__write-comments-form {
+    position: relative;
+    margin-bottom: 27px;
+}
+.comment-input {
+    width: 838px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    border: 1px solid #4B2A0B;
+    background: #FFF;
+    box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.20) inset;
 }
 .post-detail__write-comments-box {
     width: 838px;
@@ -266,7 +277,7 @@
     background-color: transparent; /*버튼 기본 배경색상 제거*/
     cursor: pointer;
 }
-.post-detail__write-comments-box-hamburger-btn {
+.hamburger-btn {
     position: absolute;
     top: 16px;
     right: 38px;
@@ -274,19 +285,11 @@
     background-color: transparent; 
     cursor: pointer;
 }
-.post-detail__write-comments-box-reply-btn {
-    border-style: none;
-    background-color: transparent;
-    position: absolute;
-    bottom: 15px;
-    right: 38px;
+.reply-btn {
     width: 63px;
     height: 21px;
     flex-shrink: 0;
     border-radius: 4px;
-    border: 1px solid #8B4400;
-    background: #FFF;
-    color: #8B4400;
     text-align: center;
     font-family: Inter;
     font-size: 10px;
@@ -296,9 +299,45 @@
     letter-spacing: -0.5px;
     cursor: pointer;
 }
+.reply-btn--whtie-bg {
+    border: 1px solid #8B4400;
+    background-color: transparent;
+    position: absolute;
+    bottom: 15px;
+    right: 38px;
+    background: #FFF;
+    color: #8B4400;
+}
+.reply-btn--brown-bg {
+    border: 1px solid #8B4400;
+    background: #8B4400;
+    color: #FFF;
+    position: absolute;
+    bottom: 12px;
+    right: 18px;
+
+}
 .hidden {
     display: none;
 }
 .post-detail__write-comments-box--white {
     background-color: #FFF;
+}
+
+.write-comment-input {
+    width: 838px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    border: 1px solid #4B2A0B;
+    background: #FFF;
+    box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.20) inset;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 27px;
+}
+.write-comment-input div {
+    outline: 0px solid transparent;
+    width: 700px;
+    height: 85px;
 }

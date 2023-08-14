@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <header class="header" style="background-color: lightblue;">Header</header>
+    <nav class="nav"></nav>
+
+    <main class="registration-main">
+        <div class="registration-container">
+            <h1 class="registration-title"></h1>
+            <div class="registration-content">
+                <ul><li class="registration-content__li">수업 날짜 선택</li></ul>
+                <div class="requirement-mark">* 필수 표기 항목</div>
+                <div class="choice-time"></div>
+
+            </div>
+            <div class="registration-content-border"></div>
+            <div class="registration-content">
+                <ul><li class="registration-content__li">학생 정보 입력</li></ul>
+                <div class="personal-info">
+                    <label for="personal-img" class="personal-info__img">
+                        <form>
+                            <input type="file" id="personal-img">
+                        </form>
+                    </label>
+                    <div class="personal-info__detail">
+                        <div class="personal-info__detail-name">
+                            <span class="requirement-mark">*</span>
+                            <div class="personal-info__detail-list">이름</div>
+                            <form>
+                                <input type="text" placeholder="이름을 입력해주세요." required>
+                            </form>
+                        </div>
+                        <div class="personal-info__detail-age">
+                            <span class="requirement-mark">*</span>
+                            <div class="personal-info__detail-list">나이</div>
+                            <form>
+                                <input type="number" placeholder="나이를 입력해주세요." required>
+                            </form>
+                        </div>
+                        <div class="personal-info__detail-tel">
+                            <span class="requirement-mark">*</span>
+                            <div class="personal-info__detail-list">전화번호</div>
+                            <form>
+                                <input type="text" placeholder="전화번호를 입력해주세요." required>
+                            </form>
+                        </div>
+                        <div class="personal-info__detail-email">
+                            <span class="requirement-mark">*</span>
+                            <div class="personal-info__detail-list">이메일</div>
+                            <form>
+                                <input type="email" placeholder="이메일을 입력해주세요." required>
+                            </form>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+            <div class="registration-content-border"></div>
+            <div class="registration-content">
+                <ul><li class="registration-content__li">결제 방법</li></ul>
+                <div class="payment">
+                    <ul><li class="registration-content__li">결제 정보</li></ul>
+                </div>
+            </div>
+
+            <button>신청하기</button>
+
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* 수업 신청서 내용물들을 중간으로 배치 */
+.registration-container {
+    width: 1236px;
+}
+.registration-main {
+    display: flex;
+    justify-content: center;
+}
+.registration-title {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.4px;
+}
+.registration-content__li {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -2px;
+}
+.registration-content-border {
+    height: 1px;
+    background: #000;
+    margin: 116px 0 112px;
+}
+
+/* 필수 사항 문구 */
+.requirement-mark {
+    color: #FF8F8F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.75px;
+}

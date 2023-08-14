@@ -1,12 +1,14 @@
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const modifyBox = document.getElementById('modify-box');
+const hamburgerButtons = document.querySelectorAll('.hamburger-btn');
+const modifyBoxes = document.querySelectorAll('.post-detail__write-comments-box-modify-box');
 
 const hidden = 'hidden';
-hamburgerBtn.addEventListener('click',function() {
-    if(modifyBox.classList.contains(hidden)) {
-        modifyBox.classList.remove(hidden);
-    }
-    else {
-        modifyBox.classList.add(hidden);
-    }
-})
+
+hamburgerButtons.forEach((hamburgerBtn, index) => {
+    hamburgerBtn.addEventListener('click', function() {
+        if(modifyBoxes[index].classList.contains(hidden)) {
+            modifyBoxes[index].classList.remove(hidden);
+        } else {
+            modifyBoxes[index].classList.add(hidden);
+        }
+    })
+});

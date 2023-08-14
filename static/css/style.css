@@ -10,6 +10,9 @@
 @import "screens/posts-detail.css";
 @import "screens/informations-all.css";
 @import "screens/login.css";
+@import "screens/search-jobs.css";
+@import "screens/signup.css";
+@import "screens/registration.css";
 
 
 *{margin:0;padding:0;box-sizing:border-box;font:inherit;color:inherit;flex-shrink:0;}
