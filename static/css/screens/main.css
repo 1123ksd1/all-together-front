@@ -4,6 +4,11 @@ body{
 
 }
 
+html{
+width: 1920px;
+  
+}
+
 .slideshow-container {
   max-width: 600px;
   position: relative;
@@ -32,9 +37,11 @@ body{
 
 
 .maindiv{
-  height: 70vh;
+  width: 100%;
+  height: 686px;
   background-image: url(/static/image/상단\ 그라데이션.png);
   background-size: cover;
+  position: relative;
 }
 
 .maindiv>p{
@@ -58,15 +65,15 @@ body{
   line-height: normal;
   margin-left: 250px;
   padding-top: 10px;
-  }
+}
 
 
 .maindiv>img{
-   width: 40vw;
-   height: 70vh;
-   margin-left: 750px;
-   margin-top: -324.6px;
-
+  width: 874px;
+  height: 655px;
+  position: absolute;
+  right: 0;
+  top: 31px;
 }
 
 .servicediv{
@@ -81,19 +88,19 @@ body{
 .servicediv>img{
  margin-top: 200px;
  margin-left: 180px;
- width: 40vw;
- height: 50vh;
+ width: 400px;
+ height: 500px;
 }
 
 #togetherservice{
 
  
- margin-left: -150px;
+ margin-left: -200px;
  margin-top: 200px;
  display: flex;
  flex-direction: column;
- width: 2000vw;
- height: 50vh;
+ width: 1500px;
+ height: 500px;
  background-image: url("/static/image/mainRectangle.png");
  background-size:cover;
 
@@ -102,22 +109,22 @@ body{
 #together{
  color: #4B2A0B;
  font-family: Inter;
- font-size: 2.5rem;
+ font-size: 3.5rem;
  font-style: normal;
  font-weight: 700;
  line-height: 75px; 
  letter-spacing: -3.25px;
- margin-top: 30px;
- margin-left: -20px;
+ margin-top: 50px;
+ margin-left: 10px;
 
 }
 
 #service{
- margin-top: -30px;
- margin-left: -20px;
+ margin-top: -10px;
+ margin-left: 10px;
  color: #000;
  font-family: Inter;
- font-size: 1.7rem;
+ font-size: 3.5rem;
  font-style: normal;
  font-weight: 400;
  line-height: 75px;
@@ -127,18 +134,20 @@ body{
 #explain{
 color: #4B2A0B;
 font-family: Inter;
-font-size: 1rem;
+font-size: 1.7rem;
 font-style: normal;
 font-weight: 100;
 line-height: normal;
 letter-spacing: -0.39px;
-margin-left: -20px;
+margin-top: 50px;
+margin-left: 10px;
 }
 
 #box{
  display: flex;
  flex-direction: row;
- margin-left: -30px;
+ margin-left: 270px;
+ margin-top: -140px;
 }
 #give{
 
@@ -147,20 +156,20 @@ margin-left: -20px;
  background-image: url("/static/image/container3.png");
  background-size:cover;
  background-repeat: no-repeat;
- width: 13vw;
- height: 40vh;
+ width: 250px;
+ height: 400px;
  border-radius: 20px;
  
 }
 
 #give>p{
-margin-top: 160px;
-margin-left: -80px;
+margin-top: 290px;
+margin-left: -110px;
 color: #FFF;
 text-align: center;
 text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.40);
 font-family: Inter;
-font-size: 0.8rem;
+font-size: 1.5rem;
 font-style: normal;
 font-weight: 900;
 line-height: normal;
@@ -168,12 +177,12 @@ letter-spacing: -0.75px;
 }
 
 #givetext{
-
+margin-top: -20px;
  margin-left: 10px;
  color: #FFF;
  text-align: start;
  font-family: Inter;
- font-size: 0.5rem;
+ font-size: 1rem;
  font-style: normal;
  font-weight: 500;
  line-height: normal;
@@ -189,41 +198,40 @@ letter-spacing: -0.75px;
  background-image: url("/static/image/container1.png");
  background-size:cover;
  background-repeat: no-repeat;
- width: 13vw;
- height: 40vh;
+ width: 250px;
+ height: 400px;
  border-radius: 20px;
 
 }
 
 
 #local>p{
- margin-top: 160px;
-margin-left: -80px;
-color: #FFF;
-text-align: center;
-text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.40);
-font-family: Inter;
-font-size: 0.8rem;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-letter-spacing: -0.75px;
-
-}
-
-#localtext{
- margin-left: 10px;
- color: #FFF;
- text-align: start;
- font-family: Inter;
- font-size: 0.5rem;
- font-style: normal;
- font-weight: 500;
- line-height: normal;
- letter-spacing: -0.45px;
-
-}
-
+  margin-top: 290px;
+  margin-left: -110px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.40);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  }
+  
+  #localtext{
+  margin-top: -20px;
+   margin-left: 10px;
+   color: #FFF;
+   text-align: start;
+   font-family: Inter;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   letter-spacing: -0.45px;
+  
+  }
 #communication{
  
  margin-left: 10px;
@@ -231,38 +239,39 @@ letter-spacing: -0.75px;
  background-image: url("/static/image/게시판\ 사진.png");
  background-size:cover;
  background-repeat: no-repeat;
- width: 13vw;
- height: 40vh;
+ width: 250px;
+ height: 400px;
  border-radius: 20px;
 
 }
 
 #communication>p{
-
-margin-top: 160px;
-margin-left: -80px;
-color: #FFF;
-text-align: center;
-text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.40);
-font-family: Inter;
-font-size: 0.8rem;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-letter-spacing: -0.75px;
-}
-
-#communytext{
- margin-left: 10px;
- color: #FFF;
- text-align: start;
- font-family: Inter;
- font-size: 0.5rem;
- font-style: normal;
- font-weight: 500;
- line-height: normal;
- letter-spacing: -0.45px;
-}
+  margin-top: 290px;
+  margin-left: -110px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.40);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  }
+  
+  #communytext{
+  margin-top: -20px;
+   margin-left: 10px;
+   color: #FFF;
+   text-align: start;
+   font-family: Inter;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   letter-spacing: -0.45px;
+  
+  }
 
 #title1{
  color: #321D09;
@@ -291,8 +300,8 @@ letter-spacing: -0.75px;
 
 #teach{
  margin-top: 130px;
- margin-bottom: 20px;
- margin-left: 200px;
+ 
+ margin-left: 400px;
  color: #321D09;
  font-family: Inter;
  font-size: 2rem;
@@ -317,16 +326,16 @@ letter-spacing: -0.75px;
  display: flex;
  flex-direction: row;
  align-items: center;
- margin-left: 10px;
+ margin-left: 330px;
  overflow: hidden;
- width: 800px;
+ width: 900px;
 
 }
 
 .item{
  margin-left: 20px;
- width: 15vw;
- height: 17vh;
+ width: 300px;
+ height: 170px;
  flex-shrink: 0;
  border-radius: 20px;
  background: #412D1A;
@@ -334,10 +343,10 @@ letter-spacing: -0.75px;
 
  .item>h2{
    color: #FFF;
-   margin-top: 30px;
+   margin-top: 60px;
    margin-left: 20px;
    font-family: Inter;
-   font-size: 0.8rem;
+   font-size: 1.4rem;
    font-style: normal;
    font-weight: 600;
    line-height: 30px; 
@@ -348,9 +357,9 @@ letter-spacing: -0.75px;
  .item>h3{
    color: #FFF;
    margin-top: -20px;
-   margin-left: 110px;
+   margin-left: 180px;
    font-family: Inter;
-   font-size: 8px;
+   font-size: 1rem;
    font-style: normal;
    font-weight: 500;
    line-height: 30px; 
@@ -358,12 +367,13 @@ letter-spacing: -0.75px;
      }
 
 #left-btn{
- border:none;
- background: #EAEAEA;
- margin-top: 100px;
- margin-left: 170px;
-
+ 
+  border:none;
+  background: #EAEAEA;
+  margin-top: 100px;
+  margin-left: 30px;
 }
+
 
 
 #right-btn{
@@ -388,18 +398,18 @@ letter-spacing: -0.75px;
  background-image: url("/static/image/tram.png");
  background-size: contain;
  background-repeat: no-repeat;
- width: 50vw;
- height: 40vh;
+ width: 600px;
+ height: 700px;
  margin-top: 70px;
- margin-left: 200px;
+ margin-left: 400px;
 }
 
 #text1{
  opacity: 0.7;
  background: #2C1C0C;
  border-radius: 10px;
- width: 18vw;
- height: 40vh;
+ width: 340px;
+ height: 387px;
 }
 
 #text1>h1{
@@ -414,11 +424,11 @@ letter-spacing: -0.75px;
 }
 
 #text1>h2{
- margin-top: 90px;
+ margin-top: 180px;
  margin-left: 20px;
  color: #FFF;
  font-family: Inter;
- font-size: 1.3rem;
+ font-size: 1.7rem;
  font-style: normal;
  font-weight: 600;
  line-height: normal;
@@ -427,10 +437,10 @@ letter-spacing: -0.75px;
 
 #text1>h3{
  margin-left: 20px;
- margin-top: -20px;
+ margin-top: -25px;
  color: #FFF;
  font-family: Inter;
- font-size: 1rem;
+ font-size: 1.3rem;
  font-style: normal;
  font-weight: 500;
  line-height: normal;
@@ -442,7 +452,7 @@ letter-spacing: -0.75px;
  margin-left: 20px;
  color: #FFF;
  font-family: Inter;
- font-size: 8px;
+ font-size: 1rem;
  font-style: normal;
  font-weight: 600;
  line-height: normal;
@@ -457,10 +467,10 @@ letter-spacing: -0.75px;
  background-image: url("/static/image/metro.png");
  background-size: contain;
  background-repeat: no-repeat;
- width: 50vw;
- height: 40vh;
+ width: 500px;
+ height: 390px;
  margin-top: 70px;
- margin-left: -220px;
+ margin-left: 30px;
  margin-bottom: 80px;
 }
 
@@ -470,17 +480,17 @@ letter-spacing: -0.75px;
  opacity: 0.7;
  background: #2C1C0C;
  border-radius: 10px;
- width: 21vw;
- height: 40vh;
+ width: 470px;
+ height: 400px;
 }
 
 
 #text2>h1{
- margin-top: 70px;
+ margin-top: 100px;
  color: #FFF;
  text-align: center;
  font-family: Inter;
- font-size: 1.3rem;
+ font-size: 2rem;
  font-style: normal;
  font-weight: 500;
  line-height: normal;
@@ -491,10 +501,11 @@ letter-spacing: -0.75px;
 #text2>h2{
  margin-left: 10px;
  margin-right: 10px;
+ margin-top: 50px;
  color: #FFF;
  text-align: center;
  font-family: Inter;
- font-size: 0.3rem;
+ font-size: 0.8rem;
  font-style: normal;
  font-weight: 600;
  line-height: normal;
@@ -518,25 +529,33 @@ letter-spacing: -0.75px;
 #rectangle{
  display: flex;
  flex-direction: column;
+ margin: 30px;
 }
 
 #rectangle>div{
  
- width: 60vw;
- height: 15vh;
+ width: 1000px;
+ height: 120px;
  flex-shrink: 0;
  border-radius: 80px;
  background: #6C4A2B;
- margin-bottom: 20px;
- margin-left: 200px;
+ margin-bottom: 30px;
+ margin-left: 320px;
  color: #FFF;
 font-family: Inter;
-font-size: 1rem;
+font-size: 2rem;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
 letter-spacing: -1.05px;
 }
+
+#rectangle>div>p{
+ margin-top: 20px;
+  margin-left:  35px;
+  
+}
+
 
 
 #myButton{
@@ -544,8 +563,8 @@ letter-spacing: -1.05px;
  margin-left: 180px;
  stroke-width: 5px;
  background: #6C4A2B;
- width: 5vw;
- height: 5vh;
+ width: 50px;
+ height: 50px;
  border: none;
 
 }
