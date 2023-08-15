@@ -7,21 +7,38 @@
     <title>Registration</title>
 </head>
 <body>
-    <header class="header" style="background-color: lightblue;">Header</header>
-    <nav class="nav"></nav>
+    <header>
+        <div id="head" style="background-color: lightblue;">
+            <div id="head-content" style="background-color: lightcoral;">
+                <div id="head-content-img"><img onClick="location.href='main.html'" style="cursor: pointer;" style="background-color: beige;" src="/static/image/로고.png">다모여</div>
+                <div id="divRight">
+                    <div onClick="location.href=''" style="cursor: pointer;" img src="/static/image.png">송효재님ㅣ마이페이지</div>
+                    <div onClick="location.href=''" style="cursor: pointer;">로그아웃</div>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div id="nav-content">
+                <div onClick="location.href='main.html'" style="cursor: pointer;">메인</div>
+                <div onClick="location.href=''" style="cursor: pointer;">과외</div>
+                <div onClick="location.href=''" style="cursor: pointer;">지역정보</div>
+                <div onClick="location.href=''" style="cursor: pointer;">게시판</div>
+            </div>
+        </div>
+    </header>
 
     <main class="registration-main">
-        <div class="registration-container">
+        <div class="registration-container" style="background-color: lightpink;">
             <h1 class="registration-title"></h1>
             <div class="registration-content">
-                <ul><li class="registration-content__li">수업 날짜 선택</li></ul>
+                <div class="registration-content__li">• 수업 날짜 선택</div>
                 <div class="requirement-mark">* 필수 표기 항목</div>
                 <div class="choice-time"></div>
 
             </div>
             <div class="registration-content-border"></div>
-            <div class="registration-content">
-                <ul><li class="registration-content__li">학생 정보 입력</li></ul>
+            <div class="registration-content" style="background-color: beige;">
+                <div class="registration-content__li">• 학생 정보 입력</div>
                 <div class="personal-info">
                     <label for="personal-img" class="personal-info__img">
                         <div class="personal-info__img-txt">
@@ -66,12 +83,10 @@
             </div>
             <div class="registration-content-border"></div>
             <div class="registration-content">
-                <ul class="registration-content__ul">
-                    <li class="registration-content__li">
-                        결제 방법
-                        <span>원하시는 결제수단을 선택해주세요.</span>
-                    </li>
-                </ul>
+                <div class="registration-content__li">
+                    • 결제방법
+                    <span>원하시는 결제수단을 선택해주세요.</span>
+                </div>
                 <div class="payment">
                     <div class="payment-container">
                         <div id="payment-method" class="payment__payment-method"></div>
@@ -106,7 +121,7 @@
             PaymentWidget.ANONYMOUS
         ) // 회원 결제 초기화
         // const paymentWidget = PaymentWidget(clientKey, PaymentWidget.ANONYMOUS) // 비회원 결제 초기화
-        paymentWidget.renderPaymentMethods('#payment-method', "<%= price %>");
+        paymentWidget.renderPaymentMethods('#payment-method', amount);
         
 
 

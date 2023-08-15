@@ -1,6 +1,7 @@
 /* 수업 신청서 내용물들을 중간으로 배치 */
 .registration-container {
-    width: 1236px;
+    width: 60vw;
+    margin: 0 350px 0 340px;
 }
 .registration-main {
     display: flex;
@@ -15,6 +16,9 @@
     line-height: normal;
     letter-spacing: -2.4px;
 }
+.registration-content {
+    width: 100%;
+}
 .registration-content__li {
     color: #4B2A0B;
     font-family: Inter;
@@ -23,6 +27,15 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: -2px;
+}
+.registration-content__li span {
+    color: #9F8267;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1px;
 }
 .registration-content-border {
     height: 1px;
@@ -43,12 +56,13 @@
 }
 /* 학생 정보 입력 */
 .personal-info {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 18px;
 }
 .personal-info__img { /* 사진 등록 */
-    width: 524px;
+    width: 87%;
     height: 566px;
     flex-shrink: 0;
     border-radius: 10px;

@@ -1,3 +1,6 @@
+.posts-main {
+    margin-bottom: 100px;
+}
 .main-right--detail {
     width: 893px;
     display: flex;
@@ -14,6 +17,7 @@
     box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.20);
     padding: 69.31px 43.61px 69.31px 65.77px;
 }
+/* 게시물 디테일 상단 부분 */
 .post-detail__header {
     height: 160.173px;
     border-bottom: 1px solid #000000;
@@ -58,9 +62,7 @@
     align-items: center;
 }
 .post-detail__user-img span {
-    width: 22.475px;
-    height: 24.157px;
-    flex-shrink: 0;
+    text-align: center;
 }
 .post-detail__user-img--header {
     margin-right: 4.45px;
@@ -109,6 +111,7 @@
     font-weight: 500;
     line-height: normal;
 }
+/* 댓글5, urul복사 적혀있는 부분 */
 .post-detail__header-comment-url {
     display: flex;
     position: absolute;
@@ -117,6 +120,9 @@
 }
 .post-detail__header-comment-url img {
     margin-right: 3.34px;
+    width: 12.657px;
+    height: 11.273px;
+    flex-shrink: 0;
 }
 .post-detail__header-comment-url span {
     color: #4B2A0B;
@@ -129,6 +135,7 @@
 .post-detail__comment-container {
     width: 838px;
 }
+/* 댓글 접기, 좋아요수 */
 .post-detail__btn-comment-and-like {
     padding-top: 131px;
     display: flex;
@@ -155,7 +162,9 @@
     margin-right: 13px;
 }
 .post-detail__btn-comment img {
-    padding-left: 7px;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
 }
 .post-detail__btn-like {
     width: 84px;
@@ -188,6 +197,7 @@
     letter-spacing: -0.9px;
     padding: 20px 0 20px 10px;
 }
+/* 댓글 작성 칸 */
 .post-detail__write-comments-form {
     position: relative;
     margin-bottom: 27px;
@@ -201,6 +211,7 @@
     background: #FFF;
     box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.20) inset;
 }
+/* 달린 댓글 박스 */
 .post-detail__write-comments-box {
     width: 838px;
     border-top: 1px solid #4B2A0B;
@@ -284,6 +295,9 @@
     border-style: none;
     background-color: transparent; 
     cursor: pointer;
+    width: 18px;
+    height: 11px;
+    flex-shrink: 0;
 }
 .reply-btn {
     width: 63px;
