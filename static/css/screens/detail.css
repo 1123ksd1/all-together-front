@@ -10,10 +10,10 @@ body{
 }
 
 img{
-   padding-top: 150px;
-   margin-left: 180px;
-    width: 25vw;
-    height: 80vh;
+   padding-top: 200px;
+   margin-left: 200px;
+    width: 400px;
+    height: 600px;
 }
 
 
@@ -21,7 +21,7 @@ img{
     display: flex;
     flex-direction: column;
     margin-left: 100px;
-    width: 40vw;
+    width: 400px;
   
 }
 
@@ -33,21 +33,19 @@ img{
     font-weight: 600;
     line-height: normal;
     letter-spacing: -1.5px;
-  
-    margin-top: 250px;
-    margin-left: 70px;
+    margin-top: 350px;
+    margin-left:30px;
     }
 
     #box2{
     color: #000;
     font-family: Inter;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.75px;
-    margin-top: 20px;
-    margin-left: 70px;
+    letter-spacing: -0.5px;
+    margin-left: 30px;
     }
 
     #box3{
@@ -59,25 +57,31 @@ img{
     line-height: normal;
     letter-spacing: -0.48px;
     margin-top: 20px;
-    margin-left: 70px;
+    margin-left: 30px;
         }
 
 
 
      #star>img{
-        width: 5vw;
-        height: 2vh;
-        padding-top: 10px;
+
+        width: 80px;
+        height: 20px;
+        padding-top: 40px;
         padding-right: -30px;
-        margin-left: 70px;
+        margin-left: 30px;
+        
      }
 
-
+     .rectangles{
+      margin-top: 50px;
+     }
      #rectangle{
+      
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         padding-top: 20px; 
+       
      }
 
    
@@ -86,8 +90,8 @@ img{
          align-items: center;
          justify-content: center;
          margin-right: 5px;
-         width: 7vw;
-         height: 5vh;
+         width: 70px;
+         height: 30px;
          flex-shrink: 0;
          border-radius: 10px;
          background: #A79C92;
@@ -110,11 +114,11 @@ img{
          align-items: center;
          justify-content: center;
           margin-right: 5px;
-         width: 7vw;
-         height: 5vh;
+         width: 80px;
+         height: 30px;
          flex-shrink: 0;
          border-radius: 10px;
-         background: #D6C599;
+         background:  #DED5CC;
          color: #FFF;
          text-align: center;
          font-family: Inter;
@@ -133,11 +137,11 @@ img{
       align-items: center;
       justify-content: center;
        margin-right: 5px;
-      width: 10vw;
-      height: 5vh;
+      width: 140px;
+      height: 30px;
       flex-shrink: 0;
       border-radius: 10px;
-      background: #D6C599;
+      background:  #DED5CC;
       color: #FFF;
       text-align: center;
       font-family: Inter;
@@ -149,6 +153,28 @@ img{
    
      }
 
+     #four{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       margin-right: 5px;
+      width: 80px;
+      height: 30px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background:  #D6C599;
+      color: #FFF;
+      text-align: center;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.6px;
+   
+     }
+
+
   
 
  
@@ -159,8 +185,8 @@ img{
       margin-left: 0;
       margin-right: 0;
       margin-top: 200px;
-      width: 99vw;
-      height: 60vh;
+      width: 1250px;
+      height: 400px;
       background: #44362A;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
      
@@ -170,19 +196,20 @@ img{
      
       display: flex;
       flex-direction: column;
-      margin-top:-300px;
-      margin-left: 20px;
-      width: 23%; 
+      margin-top:-700px;
+      margin-left: 30px;
+      width: 300px;
+      height: 260px; 
     
      }
 
      #img-container>img{
-      width: 17vw;
-      height: 50vh;
+      width: 170px;
+      height: 500px;
      }
 
     #img-container>p{ 
-      width: 10vw;
+      width: 130px;
       margin-left: 220px;
       color: #FFF;
       text-align: center;
@@ -197,7 +224,6 @@ img{
     #sec3>p{
    margin-left: 200px;
    margin-top: 70px;
-   color: #4B2A0B;
    font-family: Inter;
    font-size: 1.5rem;
    font-style: normal;
@@ -207,31 +233,33 @@ img{
     }
 
     #total-information{
-      background-color: chartreuse;
+   
       display: flex;
       flex-direction: row;
       margin-left: 180px;
       margin-top: 10px;
       border-radius: 40px;
       border: 5px solid #9B8A7A;
-      width: 66vw; 
-      height: 60vh; 
+      width: 900px; 
+      height: 400px; 
       flex-shrink: 0;
     }
 
     .information{
-      background-color: #4B2A0B;
-      width: 41vw;
+     
+      width: 540px;
       display: flex;
       flex-direction: column;
+    
     }
 
 
    .information>div{
+     
       display: flex;
       flex-direction: row;
-      margin-top: 50px;
-      margin-left: 20px;
+      margin-top: 60px;
+      margin-left: 40px;
 
    }
 
@@ -240,8 +268,8 @@ img{
       align-items: center;
       justify-content: center;
       text-align: center;
-      width: 8vw;
-      height: 6vh;
+      width: 100px;
+      height: 40px;
       margin-top: 10px;
       flex-shrink: 0;
       border-radius: 10px;
@@ -261,8 +289,8 @@ img{
       align-items: center;
       justify-content: center;
       text-align: center;
-      width: 10vw;
-      height: 6vh;
+      width: 140px;
+      height: 40px;
       margin-top: 10px;
       flex-shrink: 0;
       border-radius: 10px;
@@ -277,6 +305,7 @@ img{
    }
 
    #information2{
+     
       display: flex;
       align-items: center;
       justify-content: center;
@@ -290,11 +319,13 @@ img{
       line-height: normal;
       letter-spacing: -1.1px; 
    }
+
   
    #informations{
+     width: 2000px;
      display: flex;
      flex-direction: column;
-      background-color: #d2691e;
+    
    }
 
 
@@ -302,8 +333,7 @@ img{
       
     display: flex;
     flex-direction: row;
-    width: 20vw;
-    background-color: #d2691e;
+    width: 200px;
     margin-left: 550px;
     margin-top: -290px;
    }
@@ -314,9 +344,9 @@ img{
       align-items: center;
       justify-content: center;
       text-align: center;
-      width: 8vw;
-      height: 6vh;
-      margin-top: 10px;
+      width: 100px;
+      height: 40px;
+      margin-top: -35px;
       flex-shrink: 0;
       border-radius: 10px;
       background: #7A5532;
@@ -327,8 +357,6 @@ img{
       font-weight: 600;
       line-height: normal;
       letter-spacing: -1.25px;
-
-
    }
 
    #information4{
@@ -348,7 +376,7 @@ img{
    }
 
    #women{
-      margin-top: 20px;
+      margin-top: -25px;
       margin-left: 30px;
       color: #000;
       font-family: Inter;
@@ -365,9 +393,9 @@ img{
       align-items: center;
       justify-content: center;
       text-align: center;
-      width: 8vw;
-      height: 6vh;
-      margin-top: 10px;
+      width: 110px;
+      height: 40px;
+      margin-top: 360px;
       flex-shrink: 0;
       border-radius: 10px;
       background: #7A5532;
@@ -381,14 +409,11 @@ img{
       
    }
 
-   #table{
-      margin-top: 400px;
-   }
-
 
    #timetable{
-      margin-top: 20px;
-      margin-left: 30px;
+  
+      margin-top: 370px;
+      margin-left: 20px;
       color: #000;
       font-family: Inter;
       font-size: 0.8rem;
@@ -405,9 +430,9 @@ img{
       align-items: center;
       justify-content: center;
       margin-top: 230px;
-      margin-left: 300px;
-      width: 15vw;
-      height: 8vh;
+      margin-left: 400px;
+      width: 150px;
+      height: 80px;
       flex-shrink: 0;
       border-radius: 7px;
       border: 1.5px solid #251A0F;
