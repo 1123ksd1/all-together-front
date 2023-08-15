@@ -51,6 +51,11 @@
     align-items: center;
     margin-bottom: 66px;
 }
+.login__img img {
+    width: 210px;
+    height: 211px;
+    flex-shrink: 0;
+}
 .login__form-column {
     display: flex;
     width: 554px;

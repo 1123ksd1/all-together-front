@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="/static/css/components/header.css">
+    <link rel="stylesheet" href="/static/css/components/footer.css">
+    
     <title>login</title>
 </head>
 <body>
-    <header></header>
+    <div id="header"></div>
+    <script src="/static/js/header.js"></script>
     <main class="login-main">
         <div class="login__title">
             로그인
             <div class="login-title-line"></div>
         </div>
         <div class="login">
-            <div class="login__img">🦁</div>
+            <div class="login__img"><img src="../../static/image/lion.png"></div>
             <div class="login__form-column login__form-column--margin18">
                 <form method="post" action="" class="login__form">
                     <label for="login-username"><img src="../../static/image/user.svg"></label>
@@ -39,6 +43,7 @@
 
         </div>
     </main>
-    <footer></footer>
+    <div id="footer"></div>
+    <script src="/static/js/footer.js"></script>
 </body>
 </html>
