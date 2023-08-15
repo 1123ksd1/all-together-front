@@ -7,7 +7,7 @@ header > div > div{
     flex-direction: row;
     width: 60vw;
     margin: 0 auto;
-    
+
 }
 header > div > div > div{
     padding: 0 10px 0 10px;
@@ -64,9 +64,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1500px;
-    
-    
+
 }
 
 #nav>div>div{
@@ -82,15 +80,3 @@ img{
 
 
 
-
-
-
-
-
-
-
-
-
-.nav {
-    position: relative;
-}
