@@ -1,11 +1,17 @@
-*{
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    padding: 0;
+
 }
 
 #sec1{
+margin-top: 100px;
+width: 1300px;
  height: 450px;
-background-image: url(/static/image/교육사진.png);
+background-image: url(/static/image/교육사진.svg);
 background-repeat: no-repeat;
 background-size: cover;
 

@@ -1,5 +1,17 @@
+body{
+   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+}
+
+
+
 #local-title{
-    margin-top: 150px;
+    margin-top: 70px;
     margin-left: 150px;
     color: #4B2A0B;
     font-family: Inter;
@@ -173,18 +185,19 @@
         letter-spacing: -1.1px;
       }
 
-
+    
       #rectangle{
       display: flex;
       flex-direction: column;
       margin-top: 40px;
       margin-left: 200px;
-      width: 800px;
+      width: 1200px;
       
       }
 
       #rectangle>div{
         margin-bottom: 40px;
+        margin-left: 100px;
       }
 
       #localbtn{
@@ -206,6 +219,7 @@
       .localboxs{
         display: flex;
         flex-direction: column;
+        width: 1200px;
       }
    
 

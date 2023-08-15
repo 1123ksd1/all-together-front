@@ -1,4 +1,13 @@
 
+body{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
 
 .class{
     margin-top: 70px;
