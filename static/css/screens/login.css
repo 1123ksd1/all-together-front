@@ -64,6 +64,8 @@
 .login__form-column--margin18 {
     margin-bottom: 18px;
 }
+
+/* 로그인 */
 .login__form {
     display: flex;
 }
@@ -90,6 +92,11 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.69px;
+}
+.login__form img {
+    width: 27.02px;
+    height: 28.072px;
+    flex-shrink: 0;
 }
 .login__auto {
     position: absolute;

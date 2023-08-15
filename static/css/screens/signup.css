@@ -67,6 +67,11 @@
 .signup__form {
     display: flex;
 }
+.signup__form img {
+    width: 27.02px;
+    height: 28.072px;
+    flex-shrink: 0;
+}
 .signup__form label {
     width: 101px;
     display: flex;
