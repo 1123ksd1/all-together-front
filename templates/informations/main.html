@@ -7,11 +7,31 @@
     <link rel="stylesheet" href="/static/css/components/header.css">
     <link rel="stylesheet" href="/static/css/components/footer.css">
     <script defer src="../../static/js/script.js"></script> 
-    <script src="/static/js/includeHTML.js"></script> 
+
     <title>Document</title>
 </head>
 <body>
-    <div include-html="header.html"></div>
+    <header>
+        <div id="head">
+            <div>
+                <div onClick="location.href='main.html'" style="cursor: pointer;"><img src="/static/image/로고.png">다모여</div>
+                <div id="divRight">
+                    <div onClick="location.href=''" style="cursor: pointer;" img src="/static/imagepng">송효재님ㅣ마이페이지</div>
+                    <div onClick="location.href=''" style="cursor: pointer;">로그아웃</div>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div>
+                <div onClick="location.href='main.html'" style="cursor: pointer;">메인</div>
+                <div onClick="location.href=''" style="cursor: pointer;">과외</div>
+                <div onClick="location.href=''" style="cursor: pointer;">지역정보</div>
+                <div onClick="location.href=''" style="cursor: pointer;">게시판</div>
+            </div>
+        </div>
+    </header>
+    
+
     <section id ="sec1">
         <div class="maindiv">
             <p>다함께 사는<br> 사회를 만듭니다. </p>
@@ -137,24 +157,21 @@
 
 <section id="sec3">
     <div id="teach">인기 게시물</div>
-     <div id="rectangle">
-        <div><p>고등학생 딸이 왕따를 당하는 것 같아요. 어떡하죠?
-        <button id="myButton" class="btn-primary"><img src="/static/image/Vector .png"></button></p></div>
-
-        <div><p>고등학생 딸이 왕따를 당하는 것 같아요. 어떡하죠?
-            <button id="myButton" class="btn-primary"><img src="/static/image/Vector .png"></button></p></div>
-
-        <div><p>고등학생 딸이 왕따를 당하는 것 같아요. 어떡하죠?
-                <button id="myButton" class="btn-primary"><img src="/static/image/Vector .png"></button></p></div>
-
-        
+    <div id="rectangle">
+        <div><button id="mainbtn"><p>고등학생 딸이 왕따를 당하는 것 같아요. 어떡하죠?<img src="/static/image/Vector .png"></p></button></div>
+        <div><button id="mainbtn"><p>고등학생 딸이 왕따를 당하는 것 같아요. 어떡하죠?<img src="/static/image/Vector .png"></p></button></div>
+        <div><button id="mainbtn"><p>고등학생 딸이 왕따를 당하는 것 같아요. 어떡하죠?<img src="/static/image/Vector .png"></p></button></div>
      </div>
 </section>
 
 
 
 
-
+<footer>
+    <div style="font-size: 1rem; font-family: Inter; color: #FFF; font-weight: 600;"><img src="/static/image/하단 로고.png">DIAMO.YEA</div>
+    <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표 : 멋쟁이 사자처럼 한성지부  Email : noname****</div>
+    <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표번호: 02-760-4219  주소:서울특별시 성북구 삼선교로 16길 116</div>
+</footer>
    
 
 

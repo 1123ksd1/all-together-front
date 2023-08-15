@@ -35,6 +35,8 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 1500px;
+  
 }
 #head #divRight{
     display: flex;
@@ -58,9 +60,12 @@ img{
     background: #4B2A0B;
 }
 #nav > div{
+ 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 1500px;
+    
     
 }
 

@@ -328,9 +328,10 @@ margin-top: -20px;
  display: flex;
  flex-direction: row;
  align-items: center;
- margin-left: 330px;
+ margin-left: 20px;
  overflow: hidden;
- width: 900px;
+ width: 1200px;
+
 
 }
 
@@ -368,23 +369,20 @@ margin-top: -20px;
    letter-spacing: -0.24px;
      }
 
-#left-btn{
- 
-  border:none;
-  background: #EAEAEA;
-  margin-top: 100px;
-  margin-left: 30px;
+#left-btn {
+ border: none;
+ margin-top: 180px;
+margin-left: 300px;
 }
 
+#right-btn {
+  border: none;
+  margin-top: 180px;
+
+ margin-left: 20px;
+ }
 
 
-#right-btn{
- border:none;
- background: #EAEAEA;
- margin-top: 100px;
- margin-left: 30px;
-
-}
 
 
 #localdiv{
@@ -529,47 +527,34 @@ margin-top: -20px;
 
 
 #rectangle{
- display: flex;
- flex-direction: column;
- margin: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+#mainbtn{
+  
+  margin-top: 30px;
+  margin-left: 400px;
+  width: 1000px;
+  height: 100px;
+  border-radius: 80px;
+background: #6C4A2B;
 }
 
-#rectangle>div{
- 
- width: 1000px;
- height: 120px;
- flex-shrink: 0;
- border-radius: 80px;
- background: #6C4A2B;
- margin-bottom: 30px;
- margin-left: 320px;
- color: #FFF;
+#mainbtn>p{
+ margin-top: -20px;
+color: #FFF;
 font-family: Inter;
-font-size: 2rem;
+font-size: 1.8rem;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
 letter-spacing: -1.05px;
 }
 
-#rectangle>div>p{
- margin-top: 20px;
-  margin-left:  35px;
-  
+#mainbtn>p>img{
+  width: 30px;
+  height: 43px;
+  margin-top: 40px;
+  margin-left: 170px;
 }
-
-
-
-#myButton{
- margin-top: 10px;
- margin-left: 180px;
- stroke-width: 5px;
- background: #6C4A2B;
- width: 50px;
- height: 50px;
- border: none;
-
-}
-
-
-
