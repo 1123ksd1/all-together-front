@@ -1,9 +1,10 @@
 .posts-main {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 184px;
 }
 .posts-main-content {
+    max-width: 1234px;
     display: flex;
+    margin: 0 auto;
 }
 
 .main-right__title {
@@ -128,15 +129,20 @@
     font-weight: 600;
     line-height: 10px; /* 100% */
 }
+
 .posts-wrap {
     border-spacing: 0px;
 }
+/* 페이징 */
 .posts-footer {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 49.64px 0;
 }
+
+
+
 .dropdown {
     position: relative;
     display: inline-block;

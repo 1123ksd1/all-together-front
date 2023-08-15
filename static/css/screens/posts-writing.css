@@ -1,6 +1,9 @@
 .main-right__hr--lighter {
     height: 1px;
 }
+.main-right__choose-posts {
+    margin-top: 34px;
+}
 .main-right__choose-posts-btn,
 .main-right__input-title-form input,
 .main-right__editor,
@@ -29,14 +32,45 @@
 .main-right__choose-posts-btn img {
     rotate: -90deg;
 }
+.align_mode--writing-page {
+    width: 821px;
+    height: 28px;
+    flex-shrink: 0;
+    border: none;
+    /* 디폴트 css 제거 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../../image/drop-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px top 10px;
+    padding-right: 5px;
+    background-size: 18px;
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* 제목 입력칸 */
+.main-right__input-title {
+    margin-top: 18px;
+}
 .main-right__input-title-form input {
     height: 75px;
     border-radius: 25px;
+    text-indent: 30px;
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .main-right__input-title-form input::placeholder {
     display: flex;
     align-items: center;
-    padding-left: 30px;
     color: #4B2A0B;
     font-family: Inter;
     font-size: 20px;
@@ -45,24 +79,39 @@
     line-height: normal;
 
 }
+/* 에디터 툴 박스 */
 .main-right__editor {
     height: 119px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #EFEFEF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 18px;
 }
 .main-right__editor button {
     border-style: none;
-    cursor: pointer;
+    cursor:
+    pointer;
 }
+/* 작성칸 */
+.textarea {
+    width: 902px;
+    height: 834px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 1px solid #959595;
+    background: #FFF;
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.20);
+    margin-top: 35px;
+}
+
 .main-right__input-text {
     height: 834px;
     flex-shrink: 0;
     border-radius: 40px;
     padding: 16px 24px;
-}
-.main-right__editor {
-    position: relative;
 }
 .editor-top {
     display: flex;
@@ -73,91 +122,56 @@
 .editor-top span {
     color: #4B2A0B;
     font-family: Inter;
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     letter-spacing: -0.5px;
 }
 .editor-top-image {
     position: absolute;
-    top: 17px;
     left: 42px;
 }
 .editor-top-video {
     position: absolute;
-    top: 17px;
     left: 118px;
 }
+
 .editor-top-file {
     position: absolute;
-    top: 17px;
     left: 199px;
 }
 .editor-top-link {
     position: absolute;
-    top: 17px;
     left: 275px;
 }
 .editor-top-save {
     position: absolute;
-    top: 17px;
     right: 37px;
 }
-.editor-border {
-    width: 859px;
-    height: 1px;
-    background: #3B3B3B;
-    position: absolute;
-    left: 19px;
-    bottom: 45px;
+
+.save-form {
+    position: relative;
+    margin-top: 21px;
 }
-.editor-bottom-sec {
-    position: absolute;
-    left: 51px;
-    bottom: 15px;
-}
-.editor-bottom-font-style {
-    position: absolute;
-    left: 104px;
-    bottom: 15px;
-}
-.editor-bottom-font-size {
-    position: absolute;
-    left: 178px;
-    bottom: 15px;
-}
-.editor-bottom-bold {
-    position: absolute;
-    left: 244px;
-    bottom: 12px;
-}
-.editor-bottom-italic {
-    position: absolute;
-    left: 259px;
-    bottom: 12px;
-}
-.editor-bottom-underline {
-    position: absolute;
-    left: 274px;
-    bottom: 15px;
-}
-.editor-bottom {
-    color: #4B2A0B;
+/* 저장하기 버튼 */
+.save-form input {
+    width: 87px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 2px solid #9F9F9F;
+    background: #FFF;
+    color: #878787;
+    text-align: center;
     font-family: Inter;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.6px;
-}
-
-.editor-bottom b,
-.editor-bottom i,
-.editor-border.editor-bottom u {
     font-size: 15px;
-    font-weight: 900;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     letter-spacing: -0.75px;
+    background-color: none;
+    position: absolute;
+    right: 36px;
+    cursor: pointer;
 }
-
-

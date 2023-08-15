@@ -14,3 +14,8 @@
 #right-btn {
     rotate: 180deg;
 }
+#left-btn,
+#right-btn {
+    width: 21px;
+    height: 21px;
+}

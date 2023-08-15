@@ -1,16 +1,3 @@
-
-
-body{
-  margin: 0;
-  padding: 0;
-
-}
-
-html{
-width: 1920px;
-  
-}
-
 .slideshow-container {
   max-width: 600px;
   position: relative;
@@ -79,12 +66,9 @@ width: 1920px;
 }
 
 .servicediv{
-
   display: flex;
   flex-direction: row;
   margin-left: -100px;
-
- 
 }
 
 .servicediv>img{
