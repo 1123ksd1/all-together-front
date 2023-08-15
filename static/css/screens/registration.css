@@ -1,7 +1,9 @@
 /* 수업 신청서 내용물들을 중간으로 배치 */
 .registration-container {
-    width: 60vw;
-    margin: 0 350px 0 340px;
+    margin: 0 350px 352px 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .registration-main {
     display: flex;
@@ -15,9 +17,11 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: -2.4px;
+    width: 100%;
+    margin-bottom: 105px;
 }
 .registration-content {
-    width: 100%;
+    margin: 0 auto;    
 }
 .registration-content__li {
     color: #4B2A0B;
@@ -27,6 +31,11 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: -2px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.registration-content__li--margin-right {
+    margin-right: 767px;
 }
 .registration-content__li span {
     color: #9F8267;
@@ -38,6 +47,7 @@
     letter-spacing: -1px;
 }
 .registration-content-border {
+    width: 100%;
     height: 1px;
     background: #000;
     margin: 116px 0 112px;
@@ -46,23 +56,22 @@
 /* 필수 사항 문구 */
 .requirement-mark {
     color: #FF8F8F;
-    text-align: center;
+    text-align: right;
     font-family: Inter;
-    font-size: 35px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -1.75px;
+    display: inline-block;
 }
 /* 학생 정보 입력 */
 .personal-info {
-    width: 100%;
     display: flex;
-    align-items: center;
     gap: 18px;
 }
 .personal-info__img { /* 사진 등록 */
-    width: 87%;
+    width: 524px;
     height: 566px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -164,7 +173,33 @@
     background: #FFF;
     display: flex;
     flex-direction: column;
+}
+.payment-method-block {
+    width: 319px;
+    height: 170px;
+    flex-shrink: 0;
+    color: #636363;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    border-radius: 20px;
+    border: 2px solid #8E8E8E;
+    background: #F1F1F1;
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+.payment-container__border {
+    width: 1070px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #000;
+    margin: 58.5px 45px 52.5px;
+
 }
 .payment__payment-method {
     width: 1084px;
@@ -181,5 +216,52 @@
     font-size:16px; 
     margin-top:10px;
 
-}
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 58.5px 45px 0;
+    grid-row-gap: 20px;
 
+
+}
+.payment__btn {
+    text-align: center;
+    margin-top: 136px;
+}
+.payment__btn button {
+    width: 316px;
+    height: 74px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1.5px solid #251A0F;
+    background: #4B2A0B;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.4px;
+}
+.payment__card-info-1 {
+    width: 259px;
+    height: 138px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #8E8E8E;
+    background: #F1F1F1;
+    border-radius: 20px;
+    border: 5px solid #8B4400;
+    background: #EFECCA;
+    color: #8B4400;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -1.25px;
+}

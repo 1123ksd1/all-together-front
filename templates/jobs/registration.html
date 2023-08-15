@@ -4,40 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/style.css">
+    <script defer src="../../static/js/payment.js"></script>  
     <title>Registration</title>
 </head>
 <body>
-    <header>
-        <div id="head" style="background-color: lightblue;">
-            <div id="head-content" style="background-color: lightcoral;">
-                <div id="head-content-img"><img onClick="location.href='main.html'" style="cursor: pointer;" style="background-color: beige;" src="/static/image/로고.png">다모여</div>
-                <div id="divRight">
-                    <div onClick="location.href=''" style="cursor: pointer;" img src="/static/image.png">송효재님ㅣ마이페이지</div>
-                    <div onClick="location.href=''" style="cursor: pointer;">로그아웃</div>
-                </div>
-            </div>
-        </div>
-        <div id="nav">
-            <div id="nav-content">
-                <div onClick="location.href='main.html'" style="cursor: pointer;">메인</div>
-                <div onClick="location.href=''" style="cursor: pointer;">과외</div>
-                <div onClick="location.href=''" style="cursor: pointer;">지역정보</div>
-                <div onClick="location.href=''" style="cursor: pointer;">게시판</div>
-            </div>
-        </div>
-    </header>
-
     <main class="registration-main">
-        <div class="registration-container" style="background-color: lightpink;">
-            <h1 class="registration-title"></h1>
+        <div class="registration-container">
+            <h1 class="registration-title">수업 신청서</h1>
             <div class="registration-content">
-                <div class="registration-content__li">• 수업 날짜 선택</div>
+                <div class="registration-content__li registration-content__li--margin-right">• 수업 날짜 선택</div>
                 <div class="requirement-mark">* 필수 표기 항목</div>
                 <div class="choice-time"></div>
 
             </div>
             <div class="registration-content-border"></div>
-            <div class="registration-content" style="background-color: beige;">
+            <div class="registration-content">
                 <div class="registration-content__li">• 학생 정보 입력</div>
                 <div class="personal-info">
                     <label for="personal-img" class="personal-info__img">
@@ -68,7 +49,7 @@
                             <span class="requirement-mark">*</span>
                             <div class="personal-info__detail-list">전화번호</div>
                             <form class="personal-info__detail-form">
-                                <input type="text" class="personal-info__detail-input" placeholder="전화번호를 입력해주세요." required>
+                                <input type="tel" class="personal-info__detail-input" placeholder="전화번호를 입력해주세요." required>
                             </form>
                         </div>
                         <div class="personal-info__detail-email">
@@ -89,25 +70,43 @@
                 </div>
                 <div class="payment">
                     <div class="payment-container">
-                        <div id="payment-method" class="payment__payment-method"></div>
-                        <ul><li class="registration-content__li">결제 정보</li></ul>
-                        <div class="payment__card-info-1"><span>신용카드</span></div>
+                        <div class="payment__payment-method">
+                            <div class="payment-method-block">신용카드</div>
+                            <div class="payment-method-block">가상계좌</div>
+                            <div class="payment-method-block">계좌이체</div>
+                            <div class="payment-method-block">신용카드</div>
+                            <div class="payment-method-block">신용카드</div>
+                            <div class="payment-method-block">신용카드</div>
+                            <div class="payment-method-block">신용카드</div>
+                            <div class="payment-method-block">신용카드</div>
+                        </div>
+                        <div class="payment-container__border"></div>
+                        <div class="registration-content__li">• 결제 정보</div>
+                        <div class="payment__card-info-1"><span></span></div>
                         <div class="payment__card-info-2">
                             <div class="">
                                 <div class="">결제 방법</div>
-                                <select></select>
+                                <select>
+                                    <option>신용카드 결제</option>
+                                </select>
                             </div>
-                            <div></div>
+                            <div>결제 비용</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button id="payment-button">신청하기</button>
+            <div class="payment__btn"><button id="payment-button">신청하기</button></div>
 
         </div>
 
     </main>
+    <footer>
+        <div style="font-size: 1rem; font-family: Inter; color: #FFF; font-weight: 600;"><img src="/static/image/하단 로고.png">DIAMO.YEA</div>
+        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표 : 멋쟁이 사자처럼 한성지부  Email : noname****</div>
+        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표번호: 02-760-4219  주소:서울특별시 성북구 삼선교로 16길 116</div>
+    </footer>
+
     <script src="https://js.tosspayments.com/v1/payment-widget"></script>
     <script>
         const clientKey = 'test_ck_26DlbXAaV0oEjpP6lNd3qY50Q9RB'
