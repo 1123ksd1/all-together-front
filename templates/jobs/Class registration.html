@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/screens/classregistration.css">
+    <link rel="stylesheet" href="/static/css/components/header.css">
+    <link rel="stylesheet" href="/static/css/components/footer.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="header"></div>
+    <script src="/static/js/header.js"></script>
+
+
     <section id ="sec1">
         <div class="class">수업등록하기</div>
         <div id ="classteacher">강사 정보 입력 
@@ -132,15 +138,11 @@
             <div id ="special">
                 <div>특이사항</div>
                 <input type="specai-text" placeholder="*특이사항을 입력해주세요.">
-
+                <button class="apply">등록하기</button>
            </div>
-
-        </section>
-
-
-
-    <button class="apply">등록하기</button>
-
-
+        </div>
+</section>
+<div id="footer"></div>
+<script src="/static/js/footer.js"></script>
 </body>
 </html>
