@@ -66,6 +66,11 @@
     background: #FFF;
     /* box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.20); */
 }
+.login__form-column img {
+    width: 27.02px;
+    height: 28.072px;
+    flex-shrink: 0;
+}
 .login__form-column--margin18 {
     margin-bottom: 18px;
 }
@@ -99,7 +104,6 @@
     font-weight: 500;
     line-height: normal;
 }
-
 .login__auto {
     position: absolute;
     bottom: 460px;
