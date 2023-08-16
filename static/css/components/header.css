@@ -6,7 +6,7 @@ header{
 header > div > div{
     display: flex;
     flex-direction: row;
-    width: 60vw;
+    width: 600px;
     margin: 0 auto;
 
 }
@@ -56,7 +56,7 @@ header > div > div > div{
 
 #nav{
     margin: auto;
-    width: 100%;
+    width: 1300px;
     height: 3px;
     background: #4B2A0B;
 }
@@ -64,6 +64,7 @@ header > div > div > div{
 
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
   
 
