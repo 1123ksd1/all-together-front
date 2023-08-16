@@ -9,6 +9,7 @@
     height: 3px;
     background: #4B2A0B;
     margin-top: 18px;
+    margin-bottom: 30px;
 }
 .login {
     width: 1107px;
@@ -21,7 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 130px 277px 0;
+    padding: 130px 277px;
     position: relative;
 }
 .login__title {
@@ -167,5 +168,5 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 200px;
+    bottom: 270px;
 }
