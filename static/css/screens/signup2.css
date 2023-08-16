@@ -1,3 +1,6 @@
+.signup__form-column--margin31 {
+    margin-bottom: 31px;
+}
 .signup-main {
     display: flex;
     flex-direction: column;
@@ -11,21 +14,22 @@
     height: 3px;
     background: #4B2A0B;
     margin-top: 18px;
-    margin-bottom: 30px;
 }
 .signup {
     width: 1107px;
-    height: 1162px;
+    height: 1107px;
     flex-shrink: 0;
     border-radius: 60px;
     border: 5px solid #FFF;
     background: rgba(255, 255, 255, 0.50);
     box-shadow: 20px 0px 30px 0px rgba(129, 86, 86, 0.20), -20px 4px 30px 0px rgba(129, 86, 86, 0.20);
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 130px 277px;
+    padding: 130px 277px 0;
     position: relative;
+    
 }
 .signup__title {
     color: #4B2A0B;
@@ -52,9 +56,14 @@
     align-items: center;
     margin-bottom: 66px;
 }
-.signup__img img {
+.login__img img {
     width: 90%;
     height: auto;
+    flex-shrink: 0;
+}
+.signup__img img {
+    width: 210px;
+    height: 220px;
     flex-shrink: 0;
 }
 .signup__form-column {
@@ -67,13 +76,13 @@
     background: #FFF;
     box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.20);
 }
-.signup__form-column--margin18 {
-    margin-bottom: 18px;
-}
-
-/* 로그인 */
 .signup__form {
     display: flex;
+}
+.signup__form img {
+    width: 27.02px;
+    height: 28.072px;
+    flex-shrink: 0;
 }
 .signup__form label {
     width: 90px;
@@ -83,93 +92,22 @@
 }
 .signup__form-username,
 .signup__form-pw {
-    /* width: 403px; */
+    width: 403px;
     display: flex;
     align-items: center;
     outline: none;
     border: none;
 }
-
 .signup__form-username::placeholder,
 .signup__form-pw::placeholder {
-    color: #4B2A0B;
+    color: #929292;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    /* letter-spacing: -0.45px; */
 }
-.signup__form img {
-    width: 27.02px;
-    height: 28.072px;
-    flex-shrink: 0;
-}
-.signup__auto {
-    position: absolute;
-    bottom: 460px;
-    left: 298px;
-}
-.signup__auto input[type="checkbox"] {
-    display: none;
-}
-.signup__auto input[type="checkbox"] + span {
-    cursor: pointer;
-    background-image: url("../../image/check-circle.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 25px;
-    color: #4B2A0B;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.42px;
-}
-.signup__auto input[type="checkbox"] + span, 
-.signup__search a {
-    color: #4B2A0B;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.42px;
-}
-.signup__search {
-    position: absolute;
-    bottom: 460px;
-    right: 302px;
-}
-.signup__search a {
-    text-decoration: none;
-}
-.signup-btn,
-.signup-btn {
-    width: 388px;
-    height: 70px;
-    flex-shrink: 0;
-    border-radius: 100px;
-    background: #4B2A0B;
-    color: #FFF;
-    text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -1px;
-    cursor: pointer;
-}
-.signup-btn {
-    /* margin-top: 102px; */
-    margin-bottom: 15px;
-}
-
-.signup__form-btns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 270px;
+.signup-btn--margin88 {
+    margin-top: 88px;
 }
