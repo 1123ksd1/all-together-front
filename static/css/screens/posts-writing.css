@@ -81,7 +81,7 @@
 }
 /* 에디터 툴 박스 */
 .main-right__editor {
-    height: 119px;
+    height: 82px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #EFEFEF;
