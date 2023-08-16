@@ -59,12 +59,17 @@
     color: #FF8F8F;
     text-align: right;
     font-family: Inter;
-    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -1.75px;
     display: inline-block;
+}
+.requirement-mark--small {
+    font-size: 15px;
+}
+.requirement-mark--big {
+    font-size: 35px;
 }
 /* 학생 정보 입력 */
 .personal-info {
@@ -146,8 +151,42 @@
     background: #FFF;
     padding: 15px;
 }
-.personal-info__detail-input::placeholder {
+.personal-info__detail-input--email {
+    width: 220px;
+    height: 49px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1.5px solid #563617;
+    background: #FFF;
+    padding: 15px;
+}
+.personal-info__detail-input::placeholder,
+.personal-info__detail-input--email::placeholder {
     text-align: right;
+}
+.email-select {
+    width: 170px;
+    height: 49px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1.5px solid #563617;
+    background: #FFF;
+    /* 디폴트 css 제거 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../../image/drop-down-brown.png');
+    background-repeat: no-repeat;
+    background-position: right 10px top 10px;
+    padding-right: 4px;
+    padding-left: 33px;
+    color: #858585;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.75px;
 }
 .registration-content__ul span {
     color: #9F8267;
@@ -167,7 +206,7 @@
 }
 .payment-container {
     width: 1174px;
-    height: 978px;
+    height: 998px;
     flex-shrink: 0;
     border-radius: 20px;
     border: 2px solid #4B2A0B;
@@ -244,6 +283,7 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: -1.4px;
+    cursor: pointer;
 }
 .payment__card-info {
     display: flex;
@@ -283,7 +323,8 @@
     width: 259px;
     height: 59px;
     flex-shrink: 0;
-    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     background: #4B2A0B;
     color: #FFF;
     text-align: center;
@@ -292,6 +333,11 @@
     align-items: center;
 }
 .payment__select {
+    padding-left: 30px;
+    
+}
+.payment__select,
+.price-form {
     width: 495px;
     height: 59px;
     flex-shrink: 0;
@@ -299,15 +345,12 @@
     background: #FFF;
 
 }
-.payment__select--method {
-    padding: 5px; /* 내부 여백 */
-    border-radius: 3px;
+.payment__select {
+    -moz-appearance: none;
     appearance: none;
-    -webkit-appearance: none; 
-    background-image: url('../../image/down-btn-white.svg');
+    background-image: url('../../image/drop-down-brown.png');
     background-repeat: no-repeat;
-    background-position: right 20px ; 
-    background-size: 10px; /* 화살표 크기 */
+    background-position: right 10px top 10px;
 }
 .payment__option {
     color: #2E2E2E;
@@ -317,5 +360,42 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: -1px;
+    text-indent: 30px;
 
+}
+.price-form input {
+    width: 450px;
+    height: 57px;
+    flex-shrink: 0;
+    background: #FFF;
+    border: none;
+    outline: none;
+    text-indent: 30px;
+}
+.price-form span {
+    color: #705134;
+    text-align: right;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.6px;
+}
+.price-txt {
+    display: flex;
+    justify-content: flex-end;
+    color: #4B2A0B;
+    text-align: right;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.39px;
+}
+.price-txt span {
+    display: block;
+    width: 100px;
+    height: 100%;
 }
