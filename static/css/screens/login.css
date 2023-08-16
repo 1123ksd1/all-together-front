@@ -41,19 +41,19 @@
     width: 298px;
     height: 298px;
     flex-shrink: 0;
-    border-radius: 298px;
+    border-radius: 50%;
+    overflow: hidden;
     border: 1px solid #8C8C8C;
     background: #FFF;
-    box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.25) inset;
-    
+    /* box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.25) inset; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 66px;
 }
 .login__img img {
-    width: 210px;
-    height: 211px;
+    width: 90%;
+    height: auto;
     flex-shrink: 0;
 }
 .login__form-column {
@@ -75,7 +75,7 @@
     display: flex;
 }
 .login__form label {
-    width: 101px;
+    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,11 +92,10 @@
 .login__form-pw::placeholder {
     color: #4B2A0B;
     font-family: Inter;
-    font-size: 23px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.69px;
 }
 .login__form img {
     width: 27.02px;
