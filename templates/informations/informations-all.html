@@ -24,9 +24,15 @@
     <main class="info-main">
         <div class="info-main-content">
             <div class="info-main-content__top">
-                <h4>000지역 복지제도</h4>
+                <nav class="info-main-content__nav">
+                    <ul>
+                        <li class="info-main-content__li"><a href="#" style="font-size: 20px;">복지제도</a></li>
+                        <li class="info-main-content__li"><a href="#">다문화 일자리 정보</a></li>
+                        <li class="info-main-content__li"><a href="#">방과후 & 교육</a></li>
+                    </ul>
+                </nav>
                 <form action="/informations/region/" method="GET" id="align_mode_form" class="align_mode_form">
-                    <select name="align_mode" id="align_mode" class="align_mode">
+                    <select name="align_mode" id="align_mode" class="align_mode-info">
                         <option value="recently">최신순</option>
                         <option value="scrap">인기순</option>
                     </select>
@@ -349,9 +355,9 @@
 
                 </div>
             </div>
-            <footer class="information-footer">
+            <div class="information-footer">
                 <ul class="number-nav">
-                    <li class="number-nav__list"><a href="#"><img src="../../static/image/left-btn.svg"></a></li>
+                    <li class="number-nav__list"><a href="#"><img id="left-btn" src="../../static/image/left-btn.svg"></a></li>
                     <li class="number-nav__list"><a href="#">1</a></li>
                     <li class="number-nav__list"><a href="#">2</a></li>
                     <li class="number-nav__list"><a href="#">3</a></li>
@@ -362,12 +368,14 @@
                     <li class="number-nav__list"><a href="#">8</a></li>
                     <li class="number-nav__list"><a href="#"><img id="right-btn" src="../../static/image/left-btn.svg"></a></li>
                 </ul>
-            </footer>
+            </div>
         </div>
     </main>
     
     <footer>
-        <div class="footer--yellow"></div>
+        <div style="font-size: 1rem; font-family: Inter; color: #FFF; font-weight: 600;"><img src="/static/image/하단 로고.png">DIAMO.YEA</div>
+        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표 : 멋쟁이 사자처럼 한성지부  Email : noname****</div>
+        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표번호: 02-760-4219  주소:서울특별시 성북구 삼선교로 16길 116</div>
     </footer>
 </body>
 </html>
