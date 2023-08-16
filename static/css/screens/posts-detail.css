@@ -4,12 +4,8 @@
     flex-direction: column;
     align-items: center;
 }
-.posts-main {
-    
-}
 .post-detail {
     width: 893px;
-    height: 1050.014px;
     flex-shrink: 0;
     border-radius: 40px;
     border: 1px solid #959595;
@@ -18,8 +14,6 @@
     padding: 69.31px 43.61px 69.31px 65.77px;
 }
 /* 게시물 디테일 상단 부분 */
-.post-detail__header {
-}
 .post-detail__header-title {
     color: #4B2A0B;
     font-family: Inter;
@@ -136,9 +130,24 @@
     height: 1px;
     background-color: #000000;
     margin-top: 6.51px;
+    margin-bottom: 20px;
 }
 .post-detail__comment-container {
     width: 838px;
+}
+.post {
+    width: 100%;
+    text-align: center;
+
+}
+.post-txt {
+    color: #4B2A0B;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
 }
 /* 댓글 접기, 좋아요수 */
 .post-detail__btn-comment-and-like {
