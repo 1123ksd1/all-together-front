@@ -61,7 +61,7 @@ header > div > div > div{
     background: #4B2A0B;
 }
 #nav > div{
- 
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -77,7 +77,3 @@ header > div > div > div{
     font-weight: 600;
     line-height: normal;
 }
-
-
-
-
