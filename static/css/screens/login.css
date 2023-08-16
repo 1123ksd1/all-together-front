@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 251px;
+    margin-bottom: 372px;
 }
 .login-title-line {
     width: 365px;
@@ -53,7 +55,7 @@
 }
 .login__img img {
     width: 210px;
-    height: 211px;
+    height: 220px;
     flex-shrink: 0;
 }
 .login__form-column {
@@ -158,6 +160,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: -1px;
+    cursor: pointer;
 }
 .login-btn {
     margin-top: 102px;

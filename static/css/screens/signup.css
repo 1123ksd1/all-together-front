@@ -6,6 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 251px;
+    margin-bottom: 372px;
 }
 .signup-title-line {
     width: 365px;
@@ -53,6 +55,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 66px;
+}
+.signup__img img {
+    width: 210px;
+    height: 220px;
+    flex-shrink: 0;
 }
 .signup__form-column {
     display: flex;
