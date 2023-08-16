@@ -78,7 +78,7 @@
                         <span>저장하기</span>
                     </button>
                 </div>
-                <div class="textarea" aria-placeholder="">
+                <div class="textarea">
                     <div  id="textarea" class="main-right__input-text" contenteditable="true"></div>
                 </div>
 
@@ -119,36 +119,6 @@
             reader.onload = function (e) {
                 const img = document.createElement('img');
                 img.src = e.target.result;
-                img.style.width = '200px'; // 초기 가로 길이
-                img.style.height = '300px'; // 초기 세로 길이
-                img.style.border = '1px solid #000'; // 이미지 테두리
-                img.style.cursor = 'nwse-resize'; // 대각선 크기 조절 커서 설정
-
-                let startX, startY, startWidth, startHeight, isResizing = false;
-
-                img.addEventListener('mousedown', function (e) {
-                    e.preventDefault();
-                    isResizing = true;
-                    startX = e.clientX;
-                    startY = e.clientY;
-                    startWidth = parseInt(document.defaultView.getComputedStyle(img).width, 10);
-                    startHeight = parseInt(document.defaultView.getComputedStyle(img).height, 10);
-                });
-
-                document.addEventListener('mousemove', function (e) {
-                    if (!isResizing) return;
-
-                    const newWidth = startWidth + (e.clientX - startX);
-                    const newHeight = startHeight + (e.clientY - startY);
-
-                    img.style.width = newWidth + 'px';
-                    img.style.height = newHeight + 'px';
-                });
-
-                document.addEventListener('mouseup', function () {
-                    isResizing = false;
-                });
-
                 textarea.appendChild(img);
             };
             reader.readAsDataURL(file);
