@@ -14,7 +14,7 @@
     <script src="/static/js/header.js"></script>
 
 
-    <section id ="sec1">
+    <section id ="sec1"> 
         <div class="class">수업등록하기</div>
         <div id ="classteacher">강사 정보 입력 
           
@@ -23,28 +23,31 @@
             </form>
            
         </div>
+          
 
+       
+         
         <div id ="details">
+        
            <div id ="name">
-                <div>이름</div>
-                <input type="text"  name="텍스트" value="" size="35" maxlength="20">
+                <p>*<div>이름</div></p>
+                <input type="text" placeholder=" 이름을 입력해주세요.">
            </div>
-            
             <div id="gender">
-              <div id="gender-box">성별</div>
-              <div class="radio-gender">
-                <input type="radio" name="chk_info" value="남"  >남
-                <input type="radio" name="chk_info" value="여" checked="checked">여
-              </div>
+                <p>*<div>성별</div></p>
+                 
+                 <input type="radio" name="chk_info" value="남" ><span>남</span>
+                 <input type="radio" name="chk_info" value="여" checked="checked"><span>여</span>
+             
             </div>
 
             <div id ="age">
-                <div>나이</div>
-                <input type="text"  name="텍스트" value="" size="35" maxlength="6">
+                <p>*<div>나이</div></p>
+                <input type="text" placeholder=" 나이를 입력해주세요.">
            </div>
 
             <div id="educational">
-                  <div>학력</div>
+                <p>*<div>학력</div></p>
                 <select>
                     <option>학력사항을 선택해주세요.</option>
                     <option>2022년</option>
@@ -59,7 +62,7 @@
                 </select>
             </div>
                   <div id="radio-none">
-                    <input type="radio" name="info" value="해당사항 없음">해당사항 없음
+                    <input type="radio" name="info" value="해당사항 없음 " ><span>해당사항 없음</span>
                 </div>
             </div>
         </div>
@@ -69,9 +72,9 @@
 
    
     <section id ="sec2">
-      <div id="classteacher">수업 비용</div>
+      <div id="titlecost">수업 비용</div>
         <div id="classcost">
-            <div>수업 비용</div>
+            <p>*<div>수업 비용</div></p>
           <select>
               <option>* 일주일을 기준으로 1시간씩, 월 4회 수업이 제공됩니다. 시간 당 비용을 선택해주세요.</option>
               <option>1시간/10,000</option>
@@ -81,20 +84,18 @@
               <option>1시간/50,000</option>
           </select>
       </div>
-      <hr style="border: solid 1px #000; width: 960px; margin-top: 90px; margin-left: 170px;">
+      <hr style="border: solid 1px #000; width: 960px; margin-top: 90px; margin-left: 200px;">
     </section>
 
-    
-
-   
-        <div class="keydiv">
-            <div id ="classteacher">수업 키워드</div>
-            <p>중복 선택 가능</p>
-        </div>
         <section id="sec3">
+            <div class="keydiv">
+                <div id ="keyword">수업 키워드</div>
+                <h1>중복 선택 가능</h1>
+            </div>
             <div id ="classkeyword"> 
                 <div id ="item">
-                    <div id ="classboxs">수업 대상</div> 
+                    <p>*<div>수업 대상</div></p>
+                </div>
                       <div class="radio-class">
                         <input type="radio" name="cinfo" value="">초등학생
                         <input type="radio" name="cinfo" value="">중학생
@@ -103,36 +104,38 @@
                         <input type="radio" name="cinfo" value="">직장인
                         <input type="radio" name="cinfo" value="">기타
                        </div>
-                    </div>
                 </div>
 
                 <div id ="item">
-                    <div id ="classboxs">수업 분류</div>
-                    <div class="radio-class">
-                        <input type="radio" name="hinfo" value="">회화
-                        <input type="radio" name="hinfo" value="">비즈니스 영어
-                        <input type="radio" name="hinfo" value="">유학 준비
-                        <input type="radio" name="hinfo" value="">자격증 준비
-                        <input type="radio" name="hinfo" value="">초급자 대상
-                        <input type="radio" name="hinfo" value="">중급자 대상
-                        <input type="radio" name="hinfo" value="">고급자 대상
-                      </div>
-                    </div>
+                    <p>*<div>수업 분류</div></p>
+                </div>
+                      <div class="radio-class">
+                        <input type="radio" name="cinfo" value="">회화
+                        <input type="radio" name="cinfo" value="">비즈니스 영어
+                        <input type="radio" name="cinfo" value="">유학 준비
+                        <input type="radio" name="cinfo" value="">자격증 준비
+                        <input type="radio" name="cinfo" value="">초급자 대싱
+                        <input type="radio" name="cinfo" value="">중급자 대상
+                        <input type="radio" name="cinfo" value="">고급자 대상
+                       </div>
                 </div>
 
+
                 <div id ="item">
-                    <div id="classbox">강사 정보</div>
-                      <div>
-                        <div class="radio-class2">
-                        <input type="radio" name="k_info" value="">신입
-                        <input type="radio" name="k_info" value="">1년 이상 경력
-                        <input type="radio" name="k_info" value="">3년 이상 경력
-                        <input type="radio" name="k_info" value="">5년 이상 경력
-                        <input type="radio" name="k_info" value="">7년 이상 경력
-                        <input type="radio" name="k_info" value="">10년 이상 경력
-                        </div>
-                    </div>
+                    <p>*<div>강사 정보</div></p>
                 </div>
+                      <div class="radio-class">
+                        <input type="radio" name="cinfo" value="">신입
+                        <input type="radio" name="cinfo" value="">1년 이상 경력
+                        <input type="radio" name="cinfo" value="">2년 이상 경력
+                        <input type="radio" name="cinfo" value="">3년 이상 경력
+                        <input type="radio" name="cinfo" value="">4년 이상 경력
+                        <input type="radio" name="cinfo" value="">5년 이상 경력
+                        <input type="radio" name="cinfo" value="">7년 이상 경력
+                        <input type="radio" name="cinfo" value="">10년 이상 경력
+                       </div>
+                </div>
+
 
                 <div id ="special">
                     <div>특이사항</div>

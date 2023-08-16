@@ -30,7 +30,7 @@ background-size: cover;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
     padding: 100px 250px 100px 250px ;
 }
 
@@ -407,6 +407,7 @@ background-size: cover;
 }
 
 #btn{
+    border: none;
     margin-top: 150px;
     margin-left: 900px;
     color: #251818;
@@ -417,21 +418,80 @@ background-size: cover;
     font-weight: 600;
     line-height: normal;
     letter-spacing: -1.1px;
-    border: none;
+    background-color: #FFF;
 }
 
 
+#sec3{
+   
+    height: 500px;
+}
+
 .girlcontainer{
-    
-    width: 600px;
-    height: 300px;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 #girl{
-    margin: auto;
+    width: 600px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 300px;
     background-image: url(/static/image/girl.png);
     background-size: cover;
-    width: 600px;
-    height: 300px;
+   
+}
+
+#girl>div{
+   margin-left: -300px;
+    width: 700px;
+    height: 350px;
+    background: linear-gradient(270deg, rgba(100, 40, 100, 0.00) 0%, #050404 40%);
+    background-size: cover;
+
+}
+
+#girltext{
+    padding-top: 100px;
+   padding-left: 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -2.5px;
+}
+
+#girltextBox{
+padding-top: 30px;
+padding-left: 230px;
+color: #FFF;
+font-family: Inter;
+font-size: 0.6rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -1px;
+}
+
+#btn2{
+    margin-top: 50px;
+    margin-left: 230px;
+    width: 130px;
+    height: 30px;
+    background-color: #211717;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+
+#footer{
+    width: 100%;
 }
