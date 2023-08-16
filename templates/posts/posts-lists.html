@@ -7,7 +7,8 @@
     <title>posts-lists</title>
 </head>
 <body>
-    <div include-html="header.html"></div>
+    <div id="header"></div>
+    <script src="/static/js/header.js"></script>
     <main class="posts-main">
         <div class="posts-main-content">
             <div class="main-left">
@@ -48,14 +49,14 @@
                 <section class="main-right__posts">
                     <table class="posts-wrap">
                         <tr class="posts-wrap__top">
-                            <th class="posts-wrap__topic posts-wrap__topic--top">Topic</th>
+                            <td class="posts-wrap__topic posts-wrap__topic--top">Topic</th>
                             <th class="posts-wrap__title posts-wrap__title--top">제목</th>
                             <th class="posts-wrap__writer posts-wrap__writer--top">작성자</th>
                             <th class="posts-wrap__date posts-wrap__date--top">작성일</th>
                             <th class="posts-wrap__count posts-wrap__count--top">조회</th>
                         </tr>
                         <tr class="posts-wrap__notice">
-                            <td class="posts-wrap__topic"><span class="posts-wrap__topic--notice">공지</span></td>
+                            <td class="posts-wrap__topic"><div class="posts-wrap__topic--notice">공지</div></td>
                             <td class="posts-wrap__title posts-wrap__title--data">공지사항</td>
                             <td class="posts-wrap__writer posts-wrap__writer--data">상상부기</td>
                             <td class="posts-wrap__date posts-wrap__date--data">2023.08.10</td>
@@ -123,11 +124,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div style="font-size: 1rem; font-family: Inter; color: #FFF; font-weight: 600;"><img src="/static/image/하단 로고.png">DIAMO.YEA</div>
-        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표 : 멋쟁이 사자처럼 한성지부  Email : noname****</div>
-        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표번호: 02-760-4219  주소:서울특별시 성북구 삼선교로 16길 116</div>
-    </footer>
-    <script src="../../static/js/includeHTML.js"></script>
+    <div id="footer"></div>
+    <script src="../../static/js/footer.js"></script>
 </body>
 </html>

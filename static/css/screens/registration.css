@@ -8,6 +8,7 @@
 .registration-main {
     display: flex;
     justify-content: center;
+    margin-top: 209px;
 }
 .registration-title {
     color: #4B2A0B;
