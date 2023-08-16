@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 251px;
-    margin-bottom: 372px;
+    margin: 200px 0px;
 }
 .signup-title-line {
     width: 365px;
@@ -15,7 +14,7 @@
 }
 .signup {
     width: 1107px;
-    height: 1162px;
+    height: 1100px;
     flex-shrink: 0;
     border-radius: 60px;
     border: 5px solid #FFF;
@@ -65,13 +64,13 @@
     border-radius: 100px;
     border: 1px solid #8C8C8C;
     background: #FFF;
-    box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.20);
+    /* box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.20); */
 }
 .signup__form-column--margin18 {
     margin-bottom: 18px;
 }
 
-/* 로그인 */
+/* 회원가입 */
 .signup__form {
     display: flex;
 }
@@ -80,30 +79,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 400px;
 }
 .signup__form-username,
-.signup__form-pw {
-    /* width: 403px; */
+.signup__form-pw,
+.signup__form-pw2 {
+    width: 403px;
     display: flex;
     align-items: center;
     outline: none;
     border: none;
 }
 
-.signup__form-username::placeholder,
-.signup__form-pw::placeholder {
-    color: #4B2A0B;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.signup__form img {
-    width: 27.02px;
-    height: 28.072px;
-    flex-shrink: 0;
-}
 .signup__auto {
     position: absolute;
     bottom: 460px;
@@ -171,5 +158,17 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    bottom: 270px;
+    bottom: 200px;
+}
+
+.signup__form-username::placeholder,
+.signup__form-pw::placeholder,
+.signup__form-pw2::placeholder {
+    color: #929292;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* letter-spacing: -0.45px; */
 }
