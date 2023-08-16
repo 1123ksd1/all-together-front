@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+
+.mypageWrite{
+    
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 1000px;
+    
+}
+
+#mytitle{
+margin-left: -1000px;  
+margin-top: 140px;
+color: #462C14;
+font-family: Inter;
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.65px;
+}
+
+
+h1{
+    margin-left: -600px;  
+    margin-top: -40px;
+    margin-bottom: 40px;
+    color: #9A846F;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.84px;
+}
+
+
+#leftnav{
+    width: 210px;
+    height: 1000px;
+    background: #FBFCEC;
+   box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+#rightform{
+background-color: aqua;
+width: 1000px;
+height: 1000px;
+border-radius: 30px;
+box-shadow: 5px 5px 4px 4px rgba(126, 122, 122, 0.5) inset;
+
+
+}
+
+
+input{
+    margin-left: 780px;
+    margin-top: 20px;
+}
+
+#rightform span{
+
+margin-left: 800px;
+color: #4B2A0B;
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.6px;
+}
+
+th {
+    padding: 2em 6em;
+  
+  }
+
+ td {
+      padding: 0.5em 0;
+ }
+
+ tbody{
+    margin-left: 30px;
+ }
