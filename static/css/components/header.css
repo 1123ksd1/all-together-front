@@ -19,8 +19,7 @@ header > div > div > div{
     font-weight: 600;
     line-height: normal;
     letter-spacing: -3px;
-    margin-bottom: 30px;
-    }
+}
 
     #divRight > div:nth-child(2){
         margin-top: 15px;
