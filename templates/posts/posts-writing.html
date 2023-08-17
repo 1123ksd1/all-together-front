@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/style.css">
+    <script defer src="../../static/js/posts-writing.js"></script>  
     <title>posts-writing</title>
 </head>
 <body>
@@ -42,8 +43,11 @@
                         <select name="align_mode" id="align_mode" class="align_mode--writing-page">
                             <option value="recently">게시판을 선택해 주세요.</option>
                             <option value="recently">실시간 인기글</option>
-                            <option value="recently">실시간 인기글</option>
-                            <option value="recently">실시간 인기글</option>
+                            <option value="recently">알바 게시판</option>
+                            <option value="recently">과외 게시판</option>
+                            <option value="recently">취준 게시판</option>
+                            <option value="recently">경력단절 게시판</option>
+
                         </select>
                     </form>
 
@@ -92,100 +96,6 @@
     </main>
     <div id="footer"></div>
     <script src="../../static/js/footer.js"></script>
-
-    <script>
-    const imageInput = document.getElementById('btn-image');
-    const videoInput = document.getElementById('btn-video');
-    const textarea = document.getElementById('textarea');
-    const maxHeight = 834; // 원하는 최대 높이 (px)
-    textarea.addEventListener('input', function () {
-        if (textarea.scrollHeight > maxHeight) {
-            textarea.style.overflow = 'auto';
-        } else {
-            textarea.style.overflow = 'hidden';
-        }
-    });
-
-
-    imageInput.addEventListener('change', function (event) {
-    const file = event.target.files[0];
-    if (file) {
-        // 파일 확장자 확인
-        const allowedExtensions = ['jpg', 'jpeg', 'png', 'gif'];
-        const fileExtension = file.name.split('.').pop().toLowerCase();
-
-        if (allowedExtensions.includes(fileExtension)) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                const img = document.createElement('img');
-                img.src = e.target.result;
-                textarea.appendChild(img);
-            };
-            reader.readAsDataURL(file);
-        } else {
-            alert('이미지 파일만 등록할 수 있습니다.');
-            // 파일 선택 초기화
-            imageInput.value = '';
-        }
-    }
-});
-    
-videoInput.addEventListener('change', function (event) {
-    const file = event.target.files[0];
-    if (file) {
-        // 파일 확장자 확인
-        const allowedExtensions = ['mp4', 'avi', 'mov', 'wmv'];
-        const fileExtension = file.name.split('.').pop().toLowerCase();
-
-        if (allowedExtensions.includes(fileExtension)) {
-            const reader = new FileReader();
-            reader.onload = function (e) {
-                const video = document.createElement('video');
-                video.src = e.target.result;
-                video.controls = true;
-                video.style.width = "700px";
-                video.style.height = "500px";
-                video.style.marginLeft = "80px";
-                video.style.position = 'relative'; // 포지션 추가
-                video.style.zIndex = 1; // z-index 설정
-                video.style.cursor = 'move'; // 이동할 수 있는 커서 설정
-
-                let offsetX, offsetY, startX, startY, isDragging = false;
-
-                video.addEventListener('mousedown', function (e) {
-                    e.preventDefault();
-                    isDragging = true;
-                    startX = e.clientX;
-                    startY = e.clientY;
-                    offsetX = parseFloat(video.style.marginLeft) || 0;
-                    offsetY = parseFloat(video.style.marginTop) || 0;
-                });
-
-                document.addEventListener('mousemove', function (e) {
-                    if (!isDragging) return;
-
-                    const newX = offsetX + (e.clientX - startX);
-                    const newY = offsetY + (e.clientY - startY);
-
-                    video.style.marginLeft = newX + 'px';
-                    video.style.marginTop = newY + 'px';
-                });
-
-                document.addEventListener('mouseup', function () {
-                    isDragging = false;
-                });
-
-                textarea.appendChild(video);
-            };
-            reader.readAsDataURL(file);
-        } else {
-            alert('비디오 파일만 등록할 수 있습니다.');
-            // 파일 선택 초기화
-            videoInput.value = '';
-        }
-    }
-});
-</script>
     
 </body>      
 </html>
