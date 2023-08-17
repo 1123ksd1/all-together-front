@@ -2,14 +2,14 @@
 
 
 .mypage-main {
-    background-color:aqua;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
     margin-top: 30px;
-    height: 2000px;
+    height: 2600px;
 
 }
 
@@ -29,7 +29,7 @@
     border: 1.5px solid #4B2A0B;
     background: #F6F6F6;
     width:1200px;
-    height: 1800px;
+    height: 2300px;
 }
 
 
@@ -79,7 +79,7 @@ letter-spacing: -1.05px;
 }
 
 
-img{
+#Profile-img>img{
     width: 220px;
     margin-top: 30px;
     margin-left: 40px;
@@ -237,7 +237,8 @@ margin-left: 40px;
         
         
         #sec2{
-          background-color: #FCEC5F;
+          
+          height: 700px;
         }
         
         #work{
@@ -409,5 +410,132 @@ margin-left: 40px;
   
 }
 
+.mydivRight{
+  display: flex;
+  flex-direction: row;
+  margin-left: 850px;
+  margin-top: -400px;
 
+}
+
+#leftmini{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#leftmini> div{
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  background: #7A5532;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  padding-top: 5px;
+  margin-bottom: 30px;
+}
  
+#rightmini >div{
+  color: #4B2A0B;
+font-family: Inter;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.3px;
+margin-bottom: 45px;
+margin-left: 15px;
+
+}
+
+#card>img{
+  width: 60px;
+  margin-bottom: -10px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+#card{
+  color: #462C14;
+font-family: Inter;
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.65px;
+}
+
+.money{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-left: 220px;
+  
+}
+
+#credit{
+  width: 120px;
+  height: 40px;
+border-radius: 7px;
+background: #705134;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -1.1px;
+
+
+}
+
+#credit-day{
+
+  width: 120px;
+  height: 40px;
+border-radius: 7px;
+border: 1.5px solid #705134;
+background: #FFF;
+color: #4B2A0B;
+text-align: center;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -1.1px;
+}
+
+.ttable{
+  border-collapse: collapse; /* 셀 테두리 분리 설정 */
+  border-spacing: 20px; /* 셀 간격 설정 */
+  width: 900px;
+  height: 700px;
+  margin-left: 150px;
+  margin-top: 30px;
+  border-radius: 40px;
+  border: 2px solid #4B2A0B;
+  background: #FFF;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.20) inset;
+  }
+
+
+
+td{
+  color: #4B2A0B;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.1px;
+  border-bottom: 1px solid #000000;
+  padding-left: 30px;
+}
