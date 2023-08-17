@@ -1,8 +1,9 @@
 .main-right__hr--lighter {
+    width: 903px;
     height: 1px;
 }
 .main-right__choose-posts {
-    margin-top: 34px;
+    margin-top: 35px;
 }
 .main-right__choose-posts-btn,
 .main-right__input-title-form input,
@@ -55,7 +56,7 @@
 }
 /* 제목 입력칸 */
 .main-right__input-title {
-    margin-top: 18px;
+    margin-top: 35px;
 }
 .main-right__input-title-form input {
     height: 75px;
@@ -88,7 +89,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-top: 18px;
+    margin-top: 35px;
 }
 .main-right__editor button {
     border-style: none;
