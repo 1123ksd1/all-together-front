@@ -33,15 +33,17 @@ header > div > div > div{
 
 
 #head{
-    background-color: white;
+
     padding: 10px 0 10px 0;
     font-size: 1.2rem;
 }
 #head > div{
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
+    width: 1300px;
+    align-items: center;
   
 }
 #head #divRight{
