@@ -14,8 +14,11 @@
 #right-btn {
     rotate: 180deg;
 }
-#left-btn,
-#right-btn {
+.number-nav__left-btn,
+.number-nav__right-btn {
     width: 21px;
     height: 21px;
+}
+.number-nav__right-btn {
+    rotate: 180deg;
 }
