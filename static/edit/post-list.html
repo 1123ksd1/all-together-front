@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/components/header.css">
+    <link rel="stylesheet" href="/static/css/components/footer.css">
+    <link rel="stylesheet" href="post-list.css">
+    
+    <script src="/static/js/includeHTML.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="head">
+            <div>
+                <div onClick="location.href='/diamoyeo/home/'" style="cursor: pointer;"><img class="header-img" src="/static/image/%EB%A1%9C%EA%B3%A0.png">다모여</div>
+                <div id="divRight">
+                    
+                        <div onClick="location.href='/accounts/mypage/'" style="cursor: pointer;"><img src="/static/image/basic.png">관리자님ㅣ마이페이지</div>
+                        <div class="div-div" onClick="location.href='/accounts/logout/'" style="cursor: pointer;">로그아웃</div>
+                    
+                </div>
+            </div>
+        </div>    
+        <div id="nav">
+            <div>
+                <div onClick="location.href='/diamoyeo/home/'" style="cursor: pointer;">메인</div>
+                <div onClick="location.href='/jobs/'" style="cursor: pointer;">과외</div>
+                <div onClick="location.href='/informations/?tab=region&align_mode=recently&page=1'" style="cursor: pointer;">지역정보</div>
+                <div onClick="location.href='/posts/?page=1'" style="cursor: pointer;">게시판</div>
+            </div>
+        </div>
+    </header>
+    
+    
+
+<head>
+    <link rel="stylesheet" href="/static/css/screens/post-all.css">
+    <script defer src="/static/js/posts.js"></script> 
+    <style>
+        .number-nav {
+            width: 40%;
+        }
+        .no-underline {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<main class="posts-main">
+    <div class="posts-main-content">
+        <div class="main-left">
+            <nav class="main-left__nav">
+                <div class="main-left__nav-yellow"></div>
+                <div class="main-left__nav-bookmark"></div>
+                <div class="main-left__nav-white">
+                    <img src="/static/image/main-logo.svg">
+                    <div class="main-left__nav-title"><span>Damo.yeo</span></div><div class="main-left__nav-border"></div>
+                    <ul class="post-nav">
+                        <li class="post-nav__list"><a href="/posts/?page=1&align_mode=recently&page=1&category=전체">전체글</a></li><div class="main-left__nav-border"></div>
+                        <li class="post-nav__list"><a href="/posts/?page=1&align_mode=recently&page=1&category=인기글">실시간 인기글</a> </li><div class="main-left__nav-border"></div>
+                        <li class="post-nav__list"><a href="/posts/?page=1&align_mode=recently&page=1&category=전체">게시판 모음</a></li><div class="main-left__nav-border"></div>
+                        <li class="post-nav__list"><a href="/posts/?page=1&align_mode=recently&page=1&category=알바">알바 게시판</a></li>
+                        <li class="post-nav__list"><a href="/posts/?page=1&align_mode=recently&page=1&category=과외">과외 게시판</a></li>
+                        <li class="post-nav__list"><a href="/posts/?page=1&align_mode=recently&page=1&category=취준">취준 게시판</a></li>
+                        <li class="post-nav__list"><a href="/posts/?page=1&align_mode=recently&page=1&category=경력단절">경력단절 게시판</a></li><div class="main-left__nav-border"></div>
+                        <li class="post-nav__list"><a href="/posts/?page=1&align_mode=recently&page=1&category=공지">공지사항</a></li><div class="main-left__nav-border"></div>
+                        <li class="post-nav__list"><a href="/posts/?page=1&align_mode=recently&page=1&category=이벤트">이벤트</a></li><div class="main-left__nav-border"></div>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="main-right">
+            
+                <header class="main-right__title">전체글</header>
+                <div class="main-right__column">
+                    <div class="main-right__sub-title">모든 게시판의 글을 볼 수 있는 곳</div>
+                    <button class="apply" onclick="location.href='/posts/create/'"><img src="edit-3.svg"></button>
+
+
+            </div>
+            <div class="main-right__hr main-right__hr--bolder"></div>
+            <form action="/informations/region/" method="GET" id="align_mode_form" class="align_mode_form">
+                <select name="align_mode" id="align_mode" class="align_mode">
+                    <option value="recently">최신순</option>
+                    <option value="scrap">인기순</option>
+                </select>
+            </form>
+
+
+            <section class="main-right__posts">
+                <table class="posts-wrap">
+                    <tr class="posts-wrap__top">
+                        <td class="posts-wrap__topic posts-wrap__topic--top">Topic</th>
+                        <th class="posts-wrap__title posts-wrap__title--top">제목</th>
+                        <th class="posts-wrap__writer posts-wrap__writer--top">작성자</th>
+                        <th class="posts-wrap__date posts-wrap__date--top">작성일</th>
+                        <th class="posts-wrap__count posts-wrap__count--top">조회</th>
+                    </tr>
+                     
+
+                        
+
+                        
+                        
+                            <tr class="posts-wrap__worry">
+                                <td class="posts-wrap__topic"><span class="posts-wrap__topic--worry">알바</span></td>
+                                <td class="posts-wrap__title posts-wrap__title--data"><a href="/posts/4/" class = "no-underline">제발 좀</td>
+                                <td class="posts-wrap__writer posts-wrap__writer--data">hello@@@@</td>
+                                <td class="posts-wrap__date posts-wrap__date--data">2023.08.18</td>
+                                <td class="posts-wrap__count posts-wrap__count--data">11</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr class="posts-wrap__worry">
+                                <td class="posts-wrap__topic"><span class="posts-wrap__topic--worry">알바</span></td>
+                                <td class="posts-wrap__title posts-wrap__title--data"><a href="/posts/3/" class = "no-underline">ㄴㄴㄴㄴ</td>
+                                <td class="posts-wrap__writer posts-wrap__writer--data">hello@@</td>
+                                <td class="posts-wrap__date posts-wrap__date--data">2023.08.18</td>
+                                <td class="posts-wrap__count posts-wrap__count--data">4</td>
+                            </tr>
+                            
+                        
+                        
+                            <tr class="posts-wrap__worry">
+                                <td class="posts-wrap__topic"><span class="posts-wrap__topic--worry">알바</span></td>
+                                <td class="posts-wrap__title posts-wrap__title--data"><a href="/posts/2/" class = "no-underline">다시 테스트</td>
+                                <td class="posts-wrap__writer posts-wrap__writer--data">hello@</td>
+                                <td class="posts-wrap__date posts-wrap__date--data">2023.08.18</td>
+                                <td class="posts-wrap__count posts-wrap__count--data">1</td>
+                            </tr>
+                            
+                        
+                    
+                
+                </table>
+            </section>
+            
+            <div class="posts-footer">
+                
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+    <footer>
+        <div style="font-size: 1rem; font-family: Inter; color: #FFF; font-weight: 600;"><img src="/static/image/하단 로고.png">DIAMO.YEA</div>
+        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표 : 멋쟁이 사자처럼 한성지부  Email : noname****</div>
+        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표번호: 02-760-4219  주소:서울특별시 성북구 삼선교로 16길 116</div>
+    </footer>
+</body>
+</html>
