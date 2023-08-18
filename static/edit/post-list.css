@@ -9,7 +9,7 @@
 }
 
 .main-right__title {
-    width: 234px;
+    /* width: 234px; */
     height: 77px;
     flex-shrink: 0;
     color: #4B2A0B;
@@ -26,7 +26,7 @@
     align-items: center;
 }
 .main-right__sub-title {
-    width: 337px;
+    width: 450px;
     height: 24px;
     flex-shrink: 0;
     color: rgba(75, 42, 11, 0.80);
@@ -42,6 +42,8 @@
 }
 .main-right__hr--bolder {
     height: 5px;
+    margin-top: 7.68px;
+    margin-bottom: 7.68px;
 }
 .posts-wrap {
     width: 928.451px;
@@ -201,3 +203,12 @@
     transform: rotate(-90deg);
     flex-shrink: 0;
   }
+
+.apply{
+    background-color: transparent;
+    border: none;
+}
+.align_mode_form {
+    display: flex;
+    justify-content:flex-end;
+}

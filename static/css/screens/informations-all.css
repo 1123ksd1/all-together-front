@@ -8,16 +8,7 @@
     position: relative;
     border-bottom: 47px solid #4B2A0B;;
 }
-.info-title::after {
-    content: "";
-    background: url("../../image/information-bg.svg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 110%;
-    position: absolute;
-    background-size: cover;
-    z-index: -1;
-}
+
 .info-title div {
     width: 60vw;
     position: absolute;
@@ -136,7 +127,7 @@
     top: 29.07px;
     right: 45.23px;
     width: 15.868px;
-    height: 14.114px;
+    width: 15.868px;
     flex-shrink: 0;
 }
 .item__topic {
@@ -149,6 +140,9 @@
 
     margin-top: 32.5px;
     margin-bottom: 18.36px;
+}
+.item-topic-afterschool {
+    margin-top: 50.569px;
 }
 .item__description {
     width: 252.302px;
@@ -205,8 +199,8 @@
 .item__table {
     border-collapse: separate;
     border-spacing: 19.64px 11.74px;
-    margin-top: -19.64px; /* 위쪽 여백을 음수값으로 설정하여 보정 */
     margin-left: -20px; /* 왼쪽 여백을 음수값으로 설정하여 보정 */
+    margin-bottom: 34.42px;
 }
 .item-container {
     display: flex;
@@ -222,7 +216,7 @@
     width: 1182.75px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 37.57px;
+    margin-bottom : 70px;
 }
 .info-main-content__top h4 {
     color: #4B2A0B;
@@ -237,4 +231,8 @@
     display: flex;
     justify-content: center;
     margin-top: 98.14px;
+}
+
+.no-underline {
+    text-decoration: none;
 }
