@@ -1,411 +1,206 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/css/style.css">
-    <title>informations-all</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/components/header.css">
+    <link rel="stylesheet" href="/static/css/components/footer.css">
+    <script src="/static/js/includeHTML.js"></script>
+    <title>Document</title>
 </head>
-<body id="info-body">
-    <div id="header"></div>
-    <script src="/static/js/header.js"></script>
-    <div class="info-title">
-        <div>
-            <h1>000지역 / 000복지</h1>
-            <p>000지역 000복지에 관한 설명 000복지에는 무엇이 들어가면 좋을까요<br>
-                대상도 나눠서 볼 수 있거나 자신한테 맞는 복지를 검색을 통해 찾는 기능이 추가
-                된다면 더욱 좋을 것 같습니다.
-            </p>
+<body>
+    <header>
+        <div id="head">
+            <div>
+                <div onClick="location.href='/diamoyeo/home/'" style="cursor: pointer;"><img class="header-img" src="/static/image/%EB%A1%9C%EA%B3%A0.png">다모여</div>
+                <div id="divRight">
+                    
+                        <div onClick="location.href='/accounts/mypage/'" style="cursor: pointer;"><img src="/static/image/basic.png">관리자님ㅣ마이페이지</div>
+                        <div onClick="location.href='/accounts/logout/'" style="cursor: pointer;">로그아웃</div>
+                    
+                </div>
+            </div>
+        </div>    
+        <div id="nav">
+            <div>
+                <div onClick="location.href='/diamoyeo/home/'" style="cursor: pointer;">메인</div>
+                <div onClick="location.href='/jobs/'" style="cursor: pointer;">과외</div>
+                <div onClick="location.href='/informations/?tab=region&align_mode=recently&page=1'" style="cursor: pointer;">지역정보</div>
+                <div onClick="location.href='/posts/?page=1'" style="cursor: pointer;">게시판</div>
+            </div>
         </div>
-        
-    </div>
+    </header>
+    
+    
+
+<head>
+    <link rel="stylesheet" href="/static/css/screens/informations.css">
+    <!-- 최신순/스크랩순 정렬 jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#align_mode").change(function () {
+                var selectedMode = $(this).val(); // 선택된 모드 값 가져오기
+                var currentTab = "afterschool"; // 현재 선택된 탭
+                var url = "/informations/?tab=" + currentTab + "&align_mode=" + selectedMode;
+                window.location.href = url; // 페이지 이동
+            });
+            var tab = "afterschool";  // Django 템플릿 태그로 파라미터 값 가져오기
+            var align_mode = "recently";  // Django 템플릿 태그로 파라미터 값 가져오기
+            if(align_mode === 'recently') { $("#align_mode option[value='recently']").prop("selected", true); }
+            else if (align_mode === 'scrap') { $("#align_mode option[value='scrap']").prop("selected", true); } 
+            else { $("#align_mode option[value='recently']").prop("selected", true); }
+        });
+    </script>
+    <style>
+        .number-nav {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body id="info-body">
+    
+    
 
     <main class="info-main">
         <div class="info-main-content">
             <div class="info-main-content__top">
                 <nav class="info-main-content__nav">
                     <ul>
-                        <li class="info-main-content__li"><a href="#" style="font-size: 20px;">복지제도</a></li>
-                        <li class="info-main-content__li"><a href="#">다문화 일자리 정보</a></li>
-                        <li class="info-main-content__li"><a href="#">방과후 & 교육</a></li>
+                        
+                            <li class="info-main-content__li"><a href="/informations/?tab=region&align_mode=recently&page=1" style="color: #977F6A;">복지 제도</a></li>
+                            <li class="info-main-content__li"><a href="/informations/?tab=multicultural&align_mode=recently&page=1" style="color: #977F6A;">일자리 정보</a></li>
+                            <li class="info-main-content__li"><a href="/informations/?tab=afterschool&align_mode=recently&page=1" style="font-size: 20px;">방과후 & 교육</a></li>
+                        
                     </ul>
                 </nav>
-                <form action="/informations/region/" method="GET" id="align_mode_form" class="align_mode_form">
+                <form action="/informations/" method="GET" id="align_mode_form" class="align_mode_form">
                     <select name="align_mode" id="align_mode" class="align_mode-info">
                         <option value="recently">최신순</option>
                         <option value="scrap">인기순</option>
                     </select>
                 </form>
             </div>
+            
             <div class="item-container" id="item-container">
                 <div class="item-container__column">
+                    
                     <div class="item">
-                        <div class="item__ct">서민금융</div>
-                        <div class="item__ct">청년</div>
-                        <img class="item__star" src="../../static/image/star.svg">
-                        <div class="item__topic">청년도약계좌</div>
+                        <img class="item__star" src="/static/image/empty_scrap.png">
+                        <div class="item__topic item-topic-afterschool">한빛마중교실</div>
                         <div class="item__description">
                             <div>
-                                납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다
-                                aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                                서울교육대학교
                             </div>
                         </div>
                         <table class="item__table">
                             <tr class="item__table-tr">
-                                <td class="item__table-ctgory">문의처</td>
-                                <td class="item__table-ctgory-data">1397</td>
+                                <td class="item__table-ctgory">접수일시</td>
+                                <td class="item__table-ctgory-data">08월 17일 ~ 08월 24일</td>
                             </tr>
                             <tr class="item__table-tr">
-                                <td class="item__table-ctgory">지원주기</td>
-                                <td class="item__table-ctgory-data">월</td>
+                                <td class="item__table-ctgory">교육일시</td>
+                                <td class="item__table-ctgory-data">08월 17일 ~ 08월 25일</td>
                             </tr>
                             <tr class="item__table-tr">
-                                <td class="item__table-ctgory">제공유형</td>
-                                <td class="item__table-ctgory-data">기타</td>
+                                <td class="item__table-ctgory">수강료</td>
+                                <td class="item__table-ctgory-data">20000(원)</td>
                             </tr>
                             <tr class="item__table-tr">
-                                <td class="item__table-ctgory">담당부처</td>
-                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
+                                <td class="item__table-ctgory">상태</td>
+                                <td class="item__table-ctgory-data">접수중</td>
                             </tr>
                         </table>
-                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
-                            자세히 보기
-                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
-                            <i id="heart-6" class="far fa-heart"></i>
+                        <button id="scrap-btn-1" class="item__more-btn" onclick="item_scrap(1)">
+                            <a href="https://www.ggpolice.go.kr/bd/bbslist.do?orgId=MAIN&amp;bbsId=FA27&amp;contentSeq=&amp;pageIndex=1&amp;search_type=all&amp;search_word=외국인" class="no-underline" target="_blank">자세히 보기</a>
                             
-                            <span class="scrap-count" id="scrap_count-6"></span>
+                                <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
+                                <i id="heart-1" class="far fa-heart"></i>
+                            
+                            <span class="scrap-count" id="scrap_count-1">0</span>
                         </button>
                     </div>
-                    <div class="item">
-                        <div class="item__ct">서민금융</div>
-                        <div class="item__ct">청년</div>
-                        <img class="item__star" src="../../static/image/star.svg">
-                        <div class="item__topic">청년도약계좌</div>
-                        <div class="item__description">
-                            <div>
-                                납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다
-                                dddddddddddddddddddddaaaaaaaaaaaasfdfsdfdfgdfgddddddddddddddda
-                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            </div>
-                        </div>
-                        <table class="item__table">
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">문의처</td>
-                                <td class="item__table-ctgory-data">1397</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">지원주기</td>
-                                <td class="item__table-ctgory-data">월</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">제공유형</td>
-                                <td class="item__table-ctgory-data">기타</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">담당부처</td>
-                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
-                            </tr>
-                        </table>
-                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
-                            자세히 보기
-                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
-                            <i id="heart-6" class="far fa-heart"></i>
-                            
-                            <span class="scrap-count" id="scrap_count-6"></span>
-                        </button>
-                    </div>
-                    <div class="item">
-                        <div class="item__ct">서민금융</div>
-                        <div class="item__ct">청년</div>
-                        <img class="item__star" src="../../static/image/star.svg">
-                        <div class="item__topic">청년도약계좌</div>
-                        <div class="item__description">
-                            <div>
-                                납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다
-                                dddddddddddddddddddddaaaaaaaaaaaasfdfsdfdfgdfgddddddddddddddda
-                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            </div>
-                        </div>
-                        <table class="item__table">
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">문의처</td>
-                                <td class="item__table-ctgory-data">1397</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">지원주기</td>
-                                <td class="item__table-ctgory-data">월</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">제공유형</td>
-                                <td class="item__table-ctgory-data">기타</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">담당부처</td>
-                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
-                            </tr>
-                        </table>
-                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
-                            자세히 보기
-                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
-                            <i id="heart-6" class="far fa-heart"></i>
-                            
-                            <span class="scrap-count" id="scrap_count-6"></span>
-                        </button>
-                    </div>
-
+                    
                 </div>
                 <div class="item-container__column">
-                    <div class="item">
-                        <div class="item__ct">서민금융</div>
-                        <div class="item__ct">청년</div>
-                        <img class="item__star" src="../../static/image/star.svg">
-                        <div class="item__topic">청년도약계좌</div>
-                        <div class="item__description">
-                            <div>
-                                납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다
-                                dddddddddddddddddddddaaaaaaaaaaaasfdfsdfdfgdfgddddddddddddddda
-                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            </div>
-                        </div>
-                        <table class="item__table">
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">문의처</td>
-                                <td class="item__table-ctgory-data">1397</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">지원주기</td>
-                                <td class="item__table-ctgory-data">월</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">제공유형</td>
-                                <td class="item__table-ctgory-data">기타</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">담당부처</td>
-                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
-                            </tr>
-                        </table>
-                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
-                            자세히 보기
-                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
-                            <i id="heart-6" class="far fa-heart"></i>
-                            
-                            <span class="scrap-count" id="scrap_count-6"></span>
-                        </button>
-                    </div>
-                    <div class="item">
-                        <div class="item__ct">서민금융</div>
-                        <div class="item__ct">청년</div>
-                        <img class="item__star" src="../../static/image/star.svg">
-                        <div class="item__topic">청년도약계좌</div>
-                        <div class="item__description">
-                            <div>
-                                납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다
-                                dddddddddddddddddddddaaaaaaaaaaaasfdfsdfdfgdfgddddddddddddddda
-                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            </div>
-                        </div>
-                        <table class="item__table">
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">문의처</td>
-                                <td class="item__table-ctgory-data">1397</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">지원주기</td>
-                                <td class="item__table-ctgory-data">월</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">제공유형</td>
-                                <td class="item__table-ctgory-data">기타</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">담당부처</td>
-                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
-                            </tr>
-                        </table>
-                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
-                            자세히 보기
-                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
-                            <i id="heart-6" class="far fa-heart"></i>
-                            
-                            <span class="scrap-count" id="scrap_count-6"></span>
-                        </button>
-                    </div>
-                    <div class="item">
-                        <div class="item__ct">서민금융</div>
-                        <div class="item__ct">청년</div>
-                        <img class="item__star" src="../../static/image/star.svg">
-                        <div class="item__topic">청년도약계좌</div>
-                        <div class="item__description">
-                            <div>
-                                납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다
-                                dddddddddddddddddddddaaaaaaaaaaaasfdfsdfdfgdfgddddddddddddddda
-                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            </div>
-                        </div>
-                        <table class="item__table">
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">문의처</td>
-                                <td class="item__table-ctgory-data">1397</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">지원주기</td>
-                                <td class="item__table-ctgory-data">월</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">제공유형</td>
-                                <td class="item__table-ctgory-data">기타</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">담당부처</td>
-                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
-                            </tr>
-                        </table>
-                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
-                            자세히 보기
-                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
-                            <i id="heart-6" class="far fa-heart"></i>
-                            
-                            <span class="scrap-count" id="scrap_count-6"></span>
-                        </button>
-                    </div>
-
                 </div>
                 <div class="item-container__column">
-                    <div class="item">
-                        <div class="item__ct">서민금융</div>
-                        <div class="item__ct">청년</div>
-                        <img class="item__star" src="../../static/image/star.svg">
-                        <div class="item__topic">청년도약계좌</div>
-                        <div class="item__description">
-                            <div>
-                                납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다
-                                dddddddddddddddddddddaaaaaaaaaaaasfdfsdfdfgdfgddddddddddddddda
-                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            </div>
-                        </div>
-                        <table class="item__table">
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">문의처</td>
-                                <td class="item__table-ctgory-data">1397</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">지원주기</td>
-                                <td class="item__table-ctgory-data">월</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">제공유형</td>
-                                <td class="item__table-ctgory-data">기타</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">담당부처</td>
-                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
-                            </tr>
-                        </table>
-                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
-                            자세히 보기
-                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
-                            <i id="heart-6" class="far fa-heart"></i>
-                            
-                            <span class="scrap-count" id="scrap_count-6"></span>
-                        </button>
-                    </div>
-                    <div class="item">
-                        <div class="item__ct">서민금융dbdddbddbddb</div>
-                        <div class="item__ct">청년</div>
-                        <img class="item__star" src="../../static/image/star.svg">
-                        <div class="item__topic">청년도약계좌</div>
-                        <div class="item__description">
-                            <div>
-                                납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다
-                                dddddddddddddddddddddaaaaaaaaaaaasfdfsdfdfgdfgddddddddddddddda
-                                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            </div>
-                        </div>
-                        <table class="item__table">
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">문의처</td>
-                                <td class="item__table-ctgory-data">1397</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">지원주기</td>
-                                <td class="item__table-ctgory-data">월</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">제공유형</td>
-                                <td class="item__table-ctgory-data">기타</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">담당부처</td>
-                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
-                            </tr>
-                        </table>
-                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
-                            자세히 보기
-                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
-                            <i id="heart-6" class="far fa-heart"></i>
-                            
-                            <span class="scrap-count" id="scrap_count-6"></span>
-                        </button>
-                    </div>
-                    <div class="item">
-                        <div class="item__ct">서민금융</div>
-                        <div class="item__ct">청년</div>
-                        <img class="item__star" src="../../static/image/star.svg">
-                        <div class="item__topic">청년도약계좌</div>
-                        <div class="item__description">
-                            <div>
-                                납입 가능한 정부지원형 적금상품으로 청년의 중장기 자산형성을 지원합니다
-                                ddddddddddddddddddddddddddddddddsaaaaaaaaaaaa
-                            </div>
-                        </div>
-                        <table class="item__table">
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">문의처</td>
-                                <td class="item__table-ctgory-data">1397</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">지원주기</td>
-                                <td class="item__table-ctgory-data">월</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">제공유형</td>
-                                <td class="item__table-ctgory-data">기타</td>
-                            </tr>
-                            <tr class="item__table-tr">
-                                <td class="item__table-ctgory">담당부처</td>
-                                <td class="item__table-ctgory-data">금융위원회 청년정책과</td>
-                            </tr>
-                        </table>
-                        <button id="scrap-btn-6" class="item__more-btn" onclick="item_scrap(6)">
-                            자세히 보기
-                            <!-- 로그인 한 유저가 좋아요를 누른 유저가 아닐 때  -->
-                            <i id="heart-6" class="far fa-heart"></i>
-                            
-                            <span class="scrap-count" id="scrap_count-6"></span>
-                        </button>
-                    </div>
-
+                    
                 </div>
             </div>
+
+            
+            
             <div class="information-footer">
-                <ul class="number-nav">
-                    <li class="number-nav__list"><a href="#"><img class="number-nav__left-btn" src="../../static/image/left-btn.svg"></a></li>
-                    <li class="number-nav__list"><a href="#">1</a></li>
-                    <li class="number-nav__list"><a href="#">2</a></li>
-                    <li class="number-nav__list"><a href="#">3</a></li>
-                    <li class="number-nav__list"><a href="#">4</a></li>
-                    <li class="number-nav__list"><a href="#">5</a></li>
-                    <li class="number-nav__list"><a href="#">6</a></li>
-                    <li class="number-nav__list"><a href="#">7</a></li>
-                    <li class="number-nav__list"><a href="#">8</a></li>
-                    <li class="number-nav__list"><a href="#"><img class="number-nav__rightbtn" src="../../static/image/left-btn.svg"></a></li>
-                </ul>
+                
             </div>
         </div>
     </main>
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    function item_scrap(id) {
+        var currentTab = "afterschool"; // 현재 선택된 탭
+        console.log(currentTab)
+        $.ajax({
+            url: "/informations/scrap/",
+            type: "GET",
+            headers: {
+                "X-Requested-With": "XMLHttpRequest",
+            },
+            data: {
+                'item_id': id,
+                'item_name': currentTab,
+            },
+            dataType: "json",
+            success: function (response) { 
+                
+                // 해당 항목의 좋아요 수만 업데이트
+                $('#scrap_count-' + id).html(response.scrap_count);
+                
+                // 좋아요 버튼 아이콘 변경
+                var heartIcon = $('#heart-' + id);
+                if (response.message === "좋아요") {
+                    heartIcon.removeClass("far fa-heart").addClass("fas fa-heart");
+                } else if (response.message === "좋아요 취소") {
+                    heartIcon.removeClass("fas fa-heart").addClass("far fa-heart");
+                }
+                
+                // 좋아요 수에 따라 항목을 정렬 (jQuery 이용)
+                var itemContainer = $('#item-container');  // 항목을 감싸는 컨테이너의 ID
+                var alignMode = $('#align_mode').val(); // 선택된 정렬 모드 가져오기
     
-    <div id="footer"></div>
-    <script src="../../static/js/footer.js"></script>
+                if (alignMode === 'scrap') {
+                    var items = itemContainer.children('.item');  // 항목들을 선택
+        
+                    items.sort(function(a, b) {
+                        var aScrapCount = parseInt($(a).find('.scrap-count').text());
+                        var bScrapCount = parseInt($(b).find('.scrap-count').text());
+                        return bScrapCount - aScrapCount;  // 스크랩 수에 따라 내림차순 정렬
+                    });
+                    
+                    itemContainer.html(items);  // 정렬된 항목을 컨테이너에 적용
+                }
+            }
+        });
+    }
+</script>
+
+
+
+    <footer>
+        <div style="font-size: 1rem; font-family: Inter; color: #FFF; font-weight: 600;"><img src="/static/image/하단 로고.png">DIAMO.YEA</div>
+        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표 : 멋쟁이 사자처럼 한성지부  Email : noname****</div>
+        <div style="font-size: 0.7rem; font-family: Inter;color: #FFF;">대표번호: 02-760-4219  주소:서울특별시 성북구 삼선교로 16길 116</div>
+    </footer>
 </body>
 </html>
